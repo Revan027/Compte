@@ -6,7 +6,7 @@
  */
 function connection() {
     try {
-        $pdo = new PDO("mysql:host=localhost;dbname=freyss_compte", "root", "mysql");
+        $pdo = new PDO("mysql:host=localhost;dbname=compte", "root", "revan27");
         return $pdo;
     } catch (PDOException $e) {
         print "Erreur !: " . $e->getMessage() . "<br/>";
