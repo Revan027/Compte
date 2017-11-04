@@ -1,244 +1,244 @@
 /*conteneurs*/
 body{
-	padding:0px;
-	margin:0px;
-	background-image:url(images/fond.png);	
-	background-repeat:repeat;	
+    padding:0px;
+    margin:0px;
+    background-image:url(images/fond.png);	
+    background-repeat:repeat;	
 }
 
 h3{
-	width:auto;
-	padding-left:5px;
-	background-image:url(images/fondBarre.png);	
-	background-repeat:repeat;
-	border:3px groove gray;
-	color:white;	
-	text-shadow: 2px 2px 2px black;
-	
+    width:auto;
+    padding-left:5px;
+    background-image:url(images/fondBarre.png);	
+    background-repeat:repeat;
+    border:3px groove gray;
+    color:white;	
+    text-shadow: 2px 2px 2px black;
+
 }
 
 #top {
-	position:relative;
-	z-index:3;
-	width:100%;
-	height:60px;
-	background-image:url(images/top.png);	
-	background-repeat:repeat;	
+    position:relative;
+    z-index:3;
+    width:100%;
+    height:60px;
+    background-image:url(images/top.png);	
+    background-repeat:repeat;	
 } 
 
 #mainConteneur{
-	width:100%;
-	font-family:"Lucida Sans Unicode", "Lucida Grande", Sans-Serif;	
+    width:100%;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", Sans-Serif;	
 }
 
 #barreG{
-	position:fixed;/*met une position fixe*/
-	z-index:2;/*superposition. utlisable avec position seulement*/
-	width:140px; 
-	height:100%;/*taille de l'ecran entier meme en zoomant*/
-	left:0;/*place l'element sur la page*/
-	top:0;
-	background-image:url(images/fondBarre.png);	
-	background-repeat:repeat;
-	border:1px solid gray;
+    position:fixed;/*met une position fixe*/
+    z-index:2;/*superposition. utlisable avec position seulement*/
+    width:140px; 
+    height:100%;/*taille de l'ecran entier meme en zoomant*/
+    left:0;/*place l'element sur la page*/
+    top:0;
+    background-image:url(images/fondBarre.png);	
+    background-repeat:repeat;
+    border:1px solid gray;
 }
 
 #barreD{
-	position:fixed;
-	z-index:2;
-	width:140px; 
-	height:100%;
-	top:0;
-	right:0;
-	background-image:url(images/fondBarre.png);	
-	background-repeat:repeat;
-	border:1px solid gray;
+    position:fixed;
+    z-index:2;
+    width:140px; 
+    height:100%;
+    top:0;
+    right:0;
+    background-image:url(images/fondBarre.png);	
+    background-repeat:repeat;
+    border:1px solid gray;
 }
 
 #centre {
-	width:1024px;
-	margin-left:15%;
-	margin-bottom:60px;
-	font-size:13px;
+    width:1024px;
+    margin-left:15%;
+    margin-bottom:60px;
+    font-size:13px;
 }  
 
 #barre{
-	width:1024px;
-	height:3px;
-	margin-top:20px;
-	background-color:black;
-	background-repeat:repeat;
-	border:1px solid gray;
+    width:1024px;
+    height:3px;
+    margin-top:20px;
+    background-color:black;
+    background-repeat:repeat;
+    border:1px solid gray;
 }
 
 #infoBulle {
-	position:fixed;
-	z-index:3;
-	width:140px; 
+    position:fixed;
+    z-index:3;
+    width:140px; 
 
-	margin-left:65%;	
-	background-image:url(images/fondBarre.png);	
-	background-repeat:repeat;
-	border:1px solid gray;
-	
+    margin-left:65%;	
+    background-image:url(images/fondBarre.png);	
+    background-repeat:repeat;
+    border:1px solid gray;
+
 }
-  
+
 #footer{
-	position:fixed;	
-	z-index:3;
-	bottom:0;	
-	width:100%; 
-	height:60px;
-	background-image:url(images/fondT3.png);	
-	background-repeat:repeat-x;
-	text-align:center;
-	color:white;	
+    position:fixed;	
+    z-index:3;
+    bottom:0;	
+    width:100%; 
+    height:60px;
+    background-image:url(images/fondT3.png);	
+    background-repeat:repeat-x;
+    text-align:center;
+    color:white;	
 }
 .version{
-	font-size:11px;
-	margin-top:40px;
-	text-shadow: 2px 2px 2px black;
+    font-size:11px;
+    margin-top:40px;
+    text-shadow: 2px 2px 2px black;
 }
 .signature{
-	float:right;
-	margin-top:35px;
-	margin-right:10px;
-	font-size:0.6em;
-	text-shadow: 2px 2px 2px black;
+    float:right;
+    margin-top:35px;
+    margin-right:10px;
+    font-size:0.6em;
+    text-shadow: 2px 2px 2px black;
 }
 .titre{margin-bottom:50px;
 }
 /*#barreG{
-	float:left;
-	width:10%; 
-	height:100%;
-	background-image:url(images/fondT3.png);	
-	background-repeat:repeat;
+        float:left;
+        width:10%; 
+        height:100%;
+        background-image:url(images/fondT3.png);	
+        background-repeat:repeat;
 }
 #barreD{
-	float:right;
-	width:10%; 
-	height:100%;
-	background-image:url(images/fondT3.png);	
-	background-repeat:repeat;
+        float:right;
+        width:10%; 
+        height:100%;
+        background-image:url(images/fondT3.png);	
+        background-repeat:repeat;
 }
 #footer{
-	clear:both; 
-	width:100%; 
-	height:60px;
-	background-image:url(images/fondT3.png);	
-	background-repeat:repeat-x;
-	text-align:center;
-	color:white;	
+        clear:both; 
+        width:100%; 
+        height:60px;
+        background-image:url(images/fondT3.png);	
+        background-repeat:repeat-x;
+        text-align:center;
+        color:white;	
 }
 */
 
 textarea{
-	width:700px;
-	height:300px;
-	margin-top:10px;
-	resize:none; 
+    width:700px;
+    height:300px;
+    margin-top:10px;
+    resize:none; 
 }
 .bouton{
-	width:140px;
-	height:30px;
+    width:140px;
+    height:30px;
 }
 
 
 
 table{	
-	clear:both;	/*positionne la div en dessous des floattants*/
-	margin-left:15%;	
-	border:1px solid gray;                        
-	border-spacing:0px;   
-	border-spacing:0px;   
-	font-size:13px;
-	text-align:center;
-	/*-moz-border-radius: 20px;
-	border-radius: 20px;
-	-khtml-border-radius: 20px;
-	-webkit-border-radius: 20px;
-	border-bottom: 1px solid #fff;
+    clear:both;	/*positionne la div en dessous des floattants*/
+    margin-left:15%;	
+    border:1px solid gray;                        
+    border-spacing:0px;   
+    border-spacing:0px;   
+    font-size:13px;
+    text-align:center;
+    /*-moz-border-radius: 20px;
+    border-radius: 20px;
+    -khtml-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-bottom: 1px solid #fff;
 }*/
 }
 .titremois{
-	background-image:url(images/fondT.png);
-	background-repeat: repeat-x;
-	font-weight: bold;
+    background-image:url(images/fondT.png);
+    background-repeat: repeat-x;
+    font-weight: bold;
 }
 .fondMois{
-	background-image:url(images/fondT.png);
-	background-repeat: repeat-x;
-	font-style: italic;
-	font-weight: bold;
+    background-image:url(images/fondT.png);
+    background-repeat: repeat-x;
+    font-style: italic;
+    font-weight: bold;
 }
 .fondTAutreTitre{
-	background-image:url(images/fondT4.png);
-	background-repeat: repeat-x;
-	font-weight: bold;
+    background-image:url(images/fondT4.png);
+    background-repeat: repeat-x;
+    font-weight: bold;
 }
 .fondDonnee{
-	background-image:url(images/fondT4.png);
-	background-repeat: repeat-x;
-	font-style: italic;
+    background-image:url(images/fondT4.png);
+    background-repeat: repeat-x;
+    font-style: italic;
 }
 .hover:hover {
-	background-image:url(images/fondT3.png);
-	background-repeat: repeat-x;
+    background-image:url(images/fondT3.png);
+    background-repeat: repeat-x;
 }
 .hover:hover .fondDonnee {
-	color:red;
+    color:red;
 }
 #croix{
-	cursor:pointer;
-	float:top; 
-	margin-left:8px;
-	position:relative;
+    cursor:pointer;
+    float:top; 
+    margin-left:8px;
+    position:relative;
 }
 #croix:hover{
-	cursor:pointer;
+    cursor:pointer;
 }
 
 
 /*Liste d'année*/
 
 #selectionAnnee{
-	width:500px;
-	height:20px;
-	margin-left:15%;
-	margin-bottom:2%;
-	border:1px solid gray;
-	font-size:13px;
-	font-weight:bold;
-	background-image:url(images/fondAnnee.png);	
+    width:500px;
+    height:20px;
+    margin-left:15%;
+    margin-bottom:2%;
+    border:1px solid gray;
+    font-size:13px;
+    font-weight:bold;
+    background-image:url(images/fondAnnee.png);	
 }
 ol{ 
-	float:left;
-	margin:0;
-	list-style-type:none;
+    float:left;
+    margin:0;
+    list-style-type:none;
 }
 li{
-	float:left; /*pour IE*/
-	width:50px;
-	padding-left:25px;
-	margin-left:25px;
-	background-image:url(images/fleche.png);
-	background-repeat:no-repeat;
+    float:left; /*pour IE*/
+    width:50px;
+    padding-left:25px;
+    margin-left:25px;
+    background-image:url(images/fleche.png);
+    background-repeat:no-repeat;
 }
 li:hover {
-	cursor:pointer;
-	color:red;
-	background-image:url(images/fleche2.png);
-	background-repeat:no-repeat;
+    cursor:pointer;
+    color:red;
+    background-image:url(images/fleche2.png);
+    background-repeat:no-repeat;
 }
 
 fieldset{
-	margin-top:10px;
+    margin-top:10px;
 }
 legend{
-	font-weight:bold;
+    font-weight:bold;
 }
 #fieldsetBlocCopier{
-	float:right;
-	width:300px;
+    float:right;
+    width:300px;
 }
