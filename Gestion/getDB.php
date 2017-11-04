@@ -5,8 +5,9 @@
  * @return \PDO
  */
 function connection() {
+    $parameters = include '../parameters.php';
     try {
-        $pdo = new PDO("mysql:host=localhost;dbname=compte", "root", "revan27");
+        $pdo = new PDO("mysql:host={$parameters['host']};dbname={$parameters['dbname']}", $parameters['user'], $parameters['password']);
         return $pdo;
     } catch (PDOException $e) {
         print "Erreur !: " . $e->getMessage() . "<br/>";
