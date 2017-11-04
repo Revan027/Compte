@@ -30,7 +30,7 @@
 		}
 
 		return $tableauDesNombres;
-	}
+	} 
 	
 	function renvoieDepense($tableauDesNombres){
 		
