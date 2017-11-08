@@ -24,12 +24,7 @@ function connection() {
  */
 function trierMois($mois) {
     $tableauMois = array('Rien', 'Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Aout', 'Septembre', 'Octobre', 'Novembre', 'Décembre');
-
-    for ($i = 1; $i <= 12; $i++) {
-        if ($mois == $tableauMois[$i]) {
-            return $i;
-        }
-    }
+    return array_search($mois, $tableauMois);
 }
 
 /**
