@@ -4,7 +4,7 @@
         <?php for ($i = 0; $i < $tailleTab; $i++) { ?>
             <td class='fondMois'>
                 <?= $arrAll[$i]["mois"] ?>
-                <img onclick='confirmation("<?= $arrAll[$i]['id'] ?>"," . "<?= $annee ?>");' id='croix' src='./images/croix.png'/>
+                <img onclick='confirmation("<?= $arrAll[$i]['id'] ?>","<?= $annee ?>");' id='croix' src='./images/croix.png'/>
             </td>
         <?php } ?>
     </tr>
