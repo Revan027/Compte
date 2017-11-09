@@ -1,6 +1,5 @@
 <?php
 
-
 /**
  * 
  * @return \PDO
@@ -36,19 +35,9 @@ function afficherAnnee() { //affiche les annees enregistré dans la bd
     $stmt = $pdo->prepare('SELECT DISTINCT annee FROM resume ORDER BY annee');
     $stmt->execute();
     $arrAll = $stmt->fetchAll();
-    echo "<h3> Visualisation</h3>";
-
-    if (!empty($arrAll)) {
-        echo "<div id='selectionAnnee'><ol name='liste'>";
-
-        foreach ($arrAll as $tableau) {
-            echo "<li id=" . $tableau["annee"] . " onclick='createXHR2((this.id))'>" . $tableau["annee"] . "</li>"; //this est un objet de type element.on veut l id de cette element
-        }
-
-        echo "</ol></div>";
-    } else {
-        return null;
-    }
+    
+    include __DIR__ . '/../templates/annee.php';
+    
     $stmt->closeCursor();
     $stmt = NULL;
 }
