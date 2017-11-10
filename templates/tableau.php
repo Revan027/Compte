@@ -8,18 +8,21 @@
             </td>
         <?php } ?>
     </tr>
+    
     <tr class='hover'>
         <td class='fondTAutreTitre'>Rentrées d'argents</td>
         <?php for ($i = 0; $i < $tailleTab; $i++) { ?>
             <td class='fondDonnee'><?= $arrAll[$i]['salaire'] ?></td>
         <?php } ?>
     </tr>
+    
     <tr class='hover'>
         <td class='fondTAutreTitre'>Dépenses</td>
         <?php for ($i = 0; $i < $tailleTab; $i++) { ?>
             <td class='fondDonnee'><?= $arrAll[$i]['depense'] ?></td>
         <?php } ?>
     </tr>
+    
     <tr class='hover'>
         <td class='fondTAutreTitre'>Bénéfices</td>
         <?php for ($i = 0; $i < $tailleTab; $i++) { ?>
@@ -35,22 +38,25 @@
             <?php for ($i = 6; $i < $tailleTabScinder; $i++) { ?>
                 <td class='fondMois'>
                     <?= $arrAll[$i]["mois"] ?>
-                    <img onclick='confirmation("<?= $arrAll[$i]['id'] ?>"," . "<?= $annee ?>");' id='croix' src='./images/croix.png'/>
+                    <img onclick='confirmation("<?= $arrAll[$i]['id'] ?>","<?= $annee ?>");' id='croix' src='./images/croix.png'/>
                 </td>
             <?php } ?>
         </tr>
+        
         <tr class='hover'>
             <td class='fondTAutreTitre'>Rentrées d'argents</td>
             <?php for ($i = 6; $i < $tailleTabScinder; $i++) { ?>
                 <td class='fondDonnee'><?= $arrAll[$i]['salaire'] ?></td>
             <?php } ?>
         </tr>
+        
         <tr class='hover'>
             <td class='fondTAutreTitre'>Dépenses</td>
             <?php for ($i = 6; $i < $tailleTabScinder; $i++) { ?>
                 <td class='fondDonnee'><?= $arrAll[$i]['depense'] ?></td>
             <?php } ?>
         </tr>
+        
         <tr class='hover'>
             <td class='fondTAutreTitre'>Bénéfices</td>
             <?php for ($i = 6; $i < $tailleTabScinder; $i++) { ?>

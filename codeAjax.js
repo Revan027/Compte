@@ -15,7 +15,7 @@ function createXHR(copierGlobal1) {
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4) {	//Si etape 4 terminé. Serveur renvoie les données en reponse de affichertableau()
 
-            if (xhr.status == 400) {	//si la reponse côté serveur est vide
+            if (xhr.status == 400) {	//si la reponse côté serveur renvoie une erreur
                 switch (xhr.statusText) {
                     case 'MONTH_EXIST' : alert("Le mois existe déjà pour cette année");
                 }
