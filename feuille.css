@@ -70,18 +70,58 @@ h3{
     background-repeat:repeat;
     border:1px solid gray;
 }
+/*infoBulle*/ 
 
-#infoBulle {
+#infoBulleBox {
     position:fixed;
     z-index:3;
-    width:140px; 
-
+    width:170px; 
     margin-left:65%;	
-    background-image:url(images/fondBarre.png);	
-    background-repeat:repeat;
-    border:1px solid gray;
-
 }
+
+#infoBulleHaut {
+    width:170px;  
+    height:50px;  
+    background-image:url(images/bulleHaut.png);	
+    background-repeat:no-repeat;
+}
+
+#barre2{
+    width:117px;
+    height:1px;
+    margin-left:15px;	
+    background-color:silver;
+    background-repeat:repeat;
+}
+#titreInfoBulleHaut {
+    padding-top:15px;
+    padding-right:15px;
+    color:white; 
+    text-shadow:1px 1px 1px silver;
+}
+
+#infoBulleCentre {
+    width:150px;   
+    height:190px;  
+    /*overflow: scroll;	 // Ascenseur*/ 
+    background-image:url(images/bulleCentre.png);	
+    background-repeat:repeat-y; 
+    padding-left:15px;
+    color:silver;  
+}
+
+marquee{
+     height:190px;  
+}
+
+#infoBulleBas {
+    width:170px;   
+    height:50px;  	
+    background-image:url(images/bulleBas.png); 
+    background-repeat:no-repeat;	
+}
+/*fin infoBulle*/
+
 
 #footer{
     position:fixed;	

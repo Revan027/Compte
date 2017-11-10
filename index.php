@@ -74,8 +74,7 @@
 
             <div id="centre">
 
-                <div id="afficherTableau"></div>	
-                <div id="test"></div>
+                <div id="afficherTableau"></div>
 
                 <form name='formulaire'>
                     <div id="barre"></div>
