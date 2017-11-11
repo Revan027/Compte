@@ -178,6 +178,8 @@ textarea{
     height:300px;
     margin-top:10px;
     resize:none; 
+    background-image:url(images/fondTextArea.png);
+    background-repeat: repeat;
 }
 .bouton{
     width:140px;
