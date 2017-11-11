@@ -190,7 +190,8 @@ textarea{
 
 table{	
     clear:both;	/*positionne la div en dessous des floattants*/
-    margin-left:15%;	
+    margin-left:10%;	   
+    width:800px;
     border:1px solid gray;                        
     border-spacing:0px;    
     font-size:13px;
