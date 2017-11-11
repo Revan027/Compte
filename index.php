@@ -73,7 +73,7 @@
             </div>
         </div>	
         <div id="footer">
-            <p class="signature">Développée  par Freyss M</p><p class="version">Gestion Comptes . Version 1.4</p>
+            <p class="signature">Développée  par Freyss M</p><p class="version">Gestion Comptes . Version 1.5</p>
         </div>	
     </body>
 </html>

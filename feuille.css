@@ -192,8 +192,7 @@ table{
     clear:both;	/*positionne la div en dessous des floattants*/
     margin-left:15%;	
     border:1px solid gray;                        
-    border-spacing:0px;   
-    border-spacing:0px;   
+    border-spacing:0px;    
     font-size:13px;
     text-align:center;
     /*-moz-border-radius: 20px;
@@ -211,12 +210,13 @@ table{
 .fondMois{
     background-image:url(images/fondT.png);
     background-repeat: repeat-x;
+    border-right:1px solid gray;       
     font-style: italic;
     font-weight: bold;
 }
 .fondTAutreTitre{
     background-image:url(images/fondT4.png);
-    background-repeat: repeat-x;
+    background-repeat: repeat-x; border-right:1px solid silver;    
     font-weight: bold;
 }
 .fondDonnee{

@@ -1,4 +1,4 @@
-<table CELLPADDING='7'>
+<table CELLPADDING='9'>
     <tr>
         <td class='titremois'>Mois</td>
         <?php for ($i = 0; $i < $tailleTab; $i++) { ?>
