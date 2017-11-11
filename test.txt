@@ -24,7 +24,7 @@ E Leclerc Incarville 06/06	 	- 85,06
 06/06		Prelevement 
 Cotisation Csca Essentiel	 	- 3,90
 06/06		Paiement Par Carte 
-H&-179,0 Vlg 05/06	 	- 32,97
+ Vlg 05/06	 	- 32,97
 06/06		Paiement Par Carte 
 Guess Villeneuve38/ 05/06	 	- 29,90
 06/06		Paiement Par Carte 

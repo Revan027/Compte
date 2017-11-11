@@ -29,7 +29,7 @@ function createXHR(copierGlobal1) {
 
     copier = encodeURIComponent(copier);//encodage pour envoyer les caracteres speciaux & ou autre
 
-    xhr.open("POST", "./calcule.php", true); //ouverture de la connexion en post
+    xhr.open("POST", "./Model/calcule.php", true); //ouverture de la connexion en post
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");	//obligatoire pour le post
     xhr.send("copier=" + copier + "&annee=" + annee + "&mois=" + mois + "&rentre=" + rentre);	//envoie des donnees en post
 
@@ -55,7 +55,7 @@ function createXHR2(annee) {
             document.getElementById('afficherTableau').innerHTML = xhr.responseText;	//injecte le code html renvoyé
         }
     }
-    xhr.open("POST", "./afficheAnnee.php", true);
+    xhr.open("POST", "./Model/afficheAnnee.php", true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.send("annee=" + annee);
 }
@@ -80,7 +80,7 @@ function deleteAjax(id, annee) {
             document.getElementById('afficherTableau').innerHTML = xhr.responseText;	//injecte le code html renvoyé
         }
     }
-    xhr.open("POST", "./moisSupp.php", true);
+    xhr.open("POST", "./Model/moisSupp.php", true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.send("id=" + id + "&annee=" + annee);
 }

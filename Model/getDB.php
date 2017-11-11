@@ -5,7 +5,7 @@
  * @return \PDO
  */
 function connection() {
-    $parameters = include __DIR__ . '/../parameters.php';
+    $parameters = include __DIR__ . '/./parameters.php';
     try {
         $pdo = new PDO("mysql:host={$parameters['db']['host']};dbname={$parameters['db']['dbname']}", $parameters['db']['user'], $parameters['db']['password']);
         return $pdo;

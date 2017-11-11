@@ -1,8 +1,8 @@
 <?php
 
 header("Content-Type: text/plain");
-include("./Gestion/getDB.php");
-include("./fctCalcul.php");
+include("./getDB.php");
+include("../Controller/fctCalcul.php");
 
 $copier = $_POST['copier']; //recupère donnees du formulaire et du text area copier
 $annee = $_POST['annee'];

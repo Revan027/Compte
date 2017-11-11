@@ -1,6 +1,6 @@
 <?php
 
-include("./Gestion/getDB.php");
+include("./getDB.php");
 
 //if((isset($_POST['id']))) test si variable existe
 $id = $_POST['id'];
