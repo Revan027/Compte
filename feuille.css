@@ -272,12 +272,18 @@ li:hover {
     background-repeat:no-repeat;
 }
 
+/*fieldset*/
+
 fieldset{
-    margin-top:10px;
+    margin-top:10px;  
+    background-image:url(images/fondFieldset.png);
+    background-repeat:repeat;
 }
+
 legend{
     font-weight:bold;
 }
+
 #fieldsetBlocCopier{
     float:right;
     width:300px;

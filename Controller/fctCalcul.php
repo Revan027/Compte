@@ -68,7 +68,7 @@ function fctInfoBulle($tableauDesNombres) {
         </div>
     
         <div id='infoBulleCentre'>";
-        echo"<marquee scrollamount='4' direction='up'>";
+        echo"<marquee scrollamount='2' direction='up'>";
             for ($i = 0; $i < (count($tableauDesNombres)); $i++) {
             echo "-" . $tableauDesNombres[$i] . "</br>";
         }
