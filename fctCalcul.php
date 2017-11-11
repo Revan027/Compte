@@ -77,7 +77,7 @@ function fctInfoBulle($tableauDesNombres) {
     
         <div id='infoBulleBas'></div>
 
-</div>";
+    </div>";
 }
 
 /**

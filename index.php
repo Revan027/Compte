@@ -39,11 +39,12 @@
 
             function ajoutCopierGlobal() {
                 if (document.forms["formulaire"].elements["oui"].checked === true) {
-                    copierGlobal = copierGlobal + (document.forms["formulaire"].elements["copier"].value) + " ssds ";
+                    copierGlobal = copierGlobal + (document.forms["formulaire"].elements["copier"].value);
+                    alert("Données enregistées");
                     createXHR(copierGlobal);
                 } else {
-                    copierGlobal = copierGlobal + (document.forms["formulaire"].elements["copier"].value) + " dsdsd ";
-                    alert(copierGlobal);
+                    copierGlobal = copierGlobal + (document.forms["formulaire"].elements["copier"].value);
+                    alert("Données enregistées");
                     document.forms["formulaire"].elements["copier"].value = "";
                 }
             }
