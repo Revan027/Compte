@@ -14,13 +14,12 @@ function renvoieTableauDesNombres($copier) {
 
     $trie = explode('-', $copier);     //trouve le signe - et sépare a partir du signe -la chaine en plusieurs chaines
     $taille = count($trie); //taille de la chaine pour le parcourir avec le for
-    $tableauPopPup = array();
-    //echo $copier ;
+   // echo $copier ;
 
     for ($i = 0; $i < $taille; $i++) { //parcoure le tableau
-        //echo $trie[$i]."oui</br>";
+        //echo "</br>Trie 1 : ".$trie[$i];
         sscanf($trie[$i], "%s", $nombre_string);   //recherche le nombre (string) du debut separer par un espace et l'insert dans un tableau
-        //echo "</br>Trie : ".$nombre_string ."</br>";
+       // echo "</br>Trie 2 : ".$nombre_string ."</br>";
 
         if ((rechercher($nombre_string)) != false) {
 
@@ -28,7 +27,8 @@ function renvoieTableauDesNombres($copier) {
             $nombre_string = str_replace(' ', '', $nombre_string);
 
             $nombre_float = floatval($nombre_string); //convertit le string en float
-
+            //echo "</br>Bon: " .$nombre_float;
+   
             $tableauDesNombres[] = $nombre_float;
         }
     }
