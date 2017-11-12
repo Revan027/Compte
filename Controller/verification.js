@@ -55,4 +55,3 @@ function ajout(evenement) {
         document.formulaire.rentre2.value = rentreGlobal;
     }
 }
-

@@ -15,7 +15,6 @@ $tableauDesNombres = renvoieTableauDesNombres($copier);
 $depense = renvoieDepense($tableauDesNombres); //calcule de la depense
 $benefice = ($rentre - $depense); //calcule du bénéfice	
 
-fctInfoBulle($tableauDesNombres);
-ajouterDB($annee, $rentre, $depense, $mois, $benefice); //ajout dans la base de données
+ajouterDB($annee, $rentre, $depense, $mois, $benefice,$tableauDesNombres); //ajout dans la base de données
 
 

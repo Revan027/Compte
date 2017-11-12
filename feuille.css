@@ -230,7 +230,7 @@ table{
     background-repeat: repeat-x;
 }
 .hover:hover .fondDonnee {
-    color:red;
+    color:white;
 }
 #croix{
     cursor:pointer;

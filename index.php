@@ -1,9 +1,14 @@
 <html><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <head>
         <link rel="stylesheet"  href="./feuille.css"/>
-        <script type="text/javascript" src="./Controller/codeAjax.js" >
-        </script>  <script type="text/javascript" src="./Controller/verification.js" ></script>
+        
+        <script src="../jquery-3.2.1.js"></script>
+        <script type="text/javascript" src="./Controller/codeAjax.js" > </script> 
+        <script type="text/javascript" src="./Controller/verification.js" ></script>
+     
+
     </head>
+
     <body onload='raz();'> 
 
         <div id="top">
@@ -17,7 +22,9 @@
 
             <div id="centre">
 
-                <div id="afficherTableau"></div>
+                <div id="afficherTableau" ></div>
+                    
+                   
 
                 <form name='formulaire'>
                     <div id="barre"></div>
@@ -66,8 +73,10 @@
                             </fieldset>
 
                             <input type='button' name='calculer' class="bouton" value="Envoyez les données" onclick='ajoutCopierGlobal();'/>
-                            <input type='reset' name='reset' class="bouton" value="Effacer les données" onclick='raz();' /><br/>	
-                        </div>		
+                            <input type='reset' name='reset' class="bouton" value="Effacer les données" onclick='raz();' /><br/>
+                        </div>	
+ 
+   	
                     </div>
                 </form>
             </div>

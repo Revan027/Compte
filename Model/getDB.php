@@ -86,7 +86,7 @@ function afficherTableau($annee) { //affiche le tableau de compte
  * @param type $mois
  * @param type $benefice
  */
-function ajouterDB($annee, $salaire, $depense, $mois, $benefice) {
+function ajouterDB($annee, $salaire, $depense, $mois, $benefice, $tableauDesNombres) {
 
     $numMois = trierMois($mois);
 
@@ -115,7 +115,8 @@ function ajouterDB($annee, $salaire, $depense, $mois, $benefice) {
             ':depense' => $depense,
             ':benefice' => $benefice
         ));
-
+        
+        require_once '../templates/infoBulle.php';
         afficherTableau($annee); //apelle la fonction affichant la base de donnée.sert de reponse pour le flux ajax
 
         $stmt->closeCursor();

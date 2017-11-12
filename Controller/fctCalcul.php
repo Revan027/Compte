@@ -54,34 +54,6 @@ function renvoieDepense($tableauDesNombres) {
 
 /**
  * 
- * @param type $tableauDesNombres
- */
-function fctInfoBulle($tableauDesNombres) {
-    
-   echo" 
-    <div id='infoBulleBox'>
-    
-        <div id='infoBulleHaut'>
-
-            <div id='titreInfoBulleHaut'><center>Dépense</center> <div id='barre2'></div> </div>
-                
-        </div>
-    
-        <div id='infoBulleCentre'>";
-        echo"<marquee scrollamount='2' direction='up'>";
-            for ($i = 0; $i < (count($tableauDesNombres)); $i++) {
-            echo "-" . $tableauDesNombres[$i] . "</br>";
-        }
-       echo " </marquee>
-        </div>  
-    
-        <div id='infoBulleBas'></div>
-
-    </div>";
-}
-
-/**
- * 
  * @param type $chaine
  * @return boolean
  */

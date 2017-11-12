@@ -21,8 +21,15 @@ function createXHR(copierGlobal1) {
                 }
                 
             } else {
+   
                 //document.getElementById("infoBulle").style.visibility = "visible";
                 document.getElementById('afficherTableau').innerHTML = xhr.responseText; //injecte le code html
+        
+                $(document).ready(function() {
+                     $('#infoBulleBox').hide(); 
+                     $( "#infoBulleBox" ).slideDown("slow");                 
+                });
+           
             }
         }
     }
