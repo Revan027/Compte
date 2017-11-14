@@ -30,7 +30,8 @@
             <td class='fondDonnee'><?= $arrAll[$i]['benefice'] ?></td>
         <?php } ?>
     </tr>
-    
+ </table>
+<table CELLPADDING='9'>
     <?php if ($scinder == true) { ?>
     
         <tr>
