@@ -2,12 +2,13 @@
 body{
     padding:0px;
     margin:0px;
-    background-image:url(images/fond.png);	
-    background-repeat:repeat;	
+    background-image:url(images/fondFieldset.png);
+    background-repeat:repeat;
 }
 
 h3{
     width:auto;
+    margin-left:-80px;
     padding-left:5px;
     background-image:url(images/fondBarre.png);	
     background-repeat:repeat;
@@ -34,7 +35,7 @@ h3{
 #barreG{
     position:fixed;/*met une position fixe*/
     z-index:2;/*superposition. utlisable avec position seulement*/
-    width:140px; 
+    width:170px; 
     height:100%;/*taille de l'ecran entier meme en zoomant*/
     left:0;/*place l'element sur la page*/
     top:0;
@@ -57,8 +58,9 @@ h3{
 
 #centre {
     width:1024px;
-    margin-left:15%;
-    margin-bottom:60px;
+    margin-bottom:60px; 
+    margin-left: auto;
+    margin-right: auto;
     font-size:13px;
 }  
 

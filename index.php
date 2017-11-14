@@ -27,7 +27,7 @@
                    
 
                 <form name='formulaire'>
-                    <div id="barre"></div>
+                 
                     <h3> Entrez vos informations à enregister</h3>
 
                     <fieldset>
