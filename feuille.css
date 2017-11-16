@@ -41,7 +41,7 @@ h3{
     top:0;
     background-image:url(images/fondBarre.png);	
     background-repeat:repeat;
-    border:1px solid gray;
+    border-right:3px solid black;
 }
 
 #barreD{
@@ -53,7 +53,7 @@ h3{
     right:0;
     background-image:url(images/fondBarre.png);	
     background-repeat:repeat;
-    border:1px solid gray;
+    border-left:3px solid black;
 }
 
 #centre {
@@ -78,7 +78,8 @@ h3{
     position:fixed;
     z-index:3;
     width:170px; 
-    margin-left:65%;	
+    margin-top :10px;
+    margin-left :1000px;
 }
 
 #infoBulleHaut {
@@ -148,7 +149,8 @@ marquee{
     font-size:0.6em;
     text-shadow: 2px 2px 2px black;
 }
-.titre{margin-bottom:50px;
+.titre{
+    margin-bottom:50px;
 }
 /*#barreG{
         float:left;
@@ -190,12 +192,17 @@ textarea{
 
 
 
-table{	
-    clear:both;	/*positionne la div en dessous des floattants*/
-    margin-left:10%;	   
-    width:800px;
-    border:1px solid gray;                        
-    border-spacing:0px;    
+#table1{	
+    clear:both;	/*positionne la div en dessous des floattants*/	   
+    width:1000px;                     
+    font-size:13px;
+    text-align:center;
+}
+
+#table2{	
+    clear:both;	/*positionne la div en dessous des floattants*/	   
+    width:1000px; 
+    border-top:0px;   
     font-size:13px;
     text-align:center;
     /*-moz-border-radius: 20px;
@@ -205,11 +212,13 @@ table{
     border-bottom: 1px solid #fff;
 }*/
 }
+
 .titremois{
     background-image:url(images/fondT.png);
     background-repeat: repeat-x;
     font-weight: bold;
 }
+
 .fondMois{
     background-image:url(images/fondT.png);
     background-repeat: repeat-x;
@@ -217,29 +226,36 @@ table{
     font-style: italic;
     font-weight: bold;
 }
+
 .fondTAutreTitre{
-    background-image:url(images/fondT4.png);
-    background-repeat: repeat-x; border-right:1px solid silver;    
+    background-color:silver;
+    background-repeat:repeat;
+    border-right:1px solid silver;    
     font-weight: bold;
 }
+
 .fondDonnee{
-    background-image:url(images/fondT4.png);
-    background-repeat: repeat-x;
+    background-image:url(images/fondFieldset.png);
+    background-repeat:repeat; 
     font-style: italic;
 }
+
 .hover:hover {
     background-image:url(images/fondT3.png);
     background-repeat: repeat-x;
 }
+
 .hover:hover .fondDonnee {
     color:white;
 }
+
 #croix{
     cursor:pointer;
     float:top; 
     margin-left:8px;
     position:relative;
 }
+
 #croix:hover{
     cursor:pointer;
 }
@@ -248,25 +264,22 @@ table{
 /*Liste d'année*/
 
 #selectionAnnee{
-    width:500px;
     height:20px;
-    margin-left:15%;
-    margin-bottom:2%;
-    border:1px solid gray;
     font-size:13px;
     font-weight:bold;
-    background-image:url(images/fondAnnee.png);	
 }
 ol{ 
     float:left;
     margin:0;
+    padding:0;
     list-style-type:none;
 }
 li{
     float:left; /*pour IE*/
-    width:50px;
     padding-left:25px;
-    margin-left:25px;
+    width:50px;
+    background-color:silver;
+    margin-right:15px;
     background-image:url(images/fleche.png);
     background-repeat:no-repeat;
 }

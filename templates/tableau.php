@@ -1,4 +1,4 @@
-<table CELLPADDING='9'>
+<table CELLPADDING='9' id="table1">
     <tr>
         <td class='titremois'>Mois</td>
         <?php for ($i = 0; $i < $tailleTab; $i++) { ?>
@@ -31,7 +31,7 @@
         <?php } ?>
     </tr>
  </table>
-<table CELLPADDING='9'>
+<table CELLPADDING='9' id="table2">
     <?php if ($scinder == true) { ?>
     
         <tr>
