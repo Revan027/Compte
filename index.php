@@ -2,7 +2,7 @@
     <head>
         <link rel="stylesheet"  href="./feuille.css"/>
         
-        <script src="../jquery-3.2.1.js"></script>
+        <script src="./jquery-3.2.1.js"></script>
         <script type="text/javascript" src="./Controller/codeAjax.js" > </script> 
         <script type="text/javascript" src="./Controller/verification.js" ></script>
      
