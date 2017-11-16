@@ -56,8 +56,8 @@
                     </fieldset>
 
                     <fieldset>
-                        <legend>Appuyez sur Entrée pour ajouter chaque rentrée d'argent</legend>
-                        Rentrée d'argent : <input type='text' name='rentre' onkeypress="ajout(event)" maxlength="8"/><input type='text' name='rentre2' disabled /><br/>
+                        <legend>Cliquez sur l'icône 'plus' pour ajouter chaque rentrée d'argent</legend>
+                        Rentrée d'argent : <input type='text' name='rentre' maxlength="8"/><img id="imgAdd" src="./images/addition.png" onClick="ajout(event);"><input type='text' name='rentre2' disabled /><br/>
                     </fieldset>
 
                     <div id="blocCopier">

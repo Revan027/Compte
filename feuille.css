@@ -306,3 +306,14 @@ legend{
     float:right;
     width:300px;
 }
+
+#imgAdd{
+    margin-left:10px;
+    margin-right:10px;
+}
+
+#imgAdd:hover{
+    cursor:pointer;
+    opacity: 0.5;
+    filter: alpha(opacity=50); 
+}

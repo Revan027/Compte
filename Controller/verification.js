@@ -43,7 +43,9 @@ function ajoutCopierGlobal() {
 }
 
 function ajout(evenement) {
-    if (evenement.keyCode == 13) {
+    
+    if(document.formulaire.rentre.value!=""){
+        
         var rentre = (document.formulaire.rentre.value);
         rentre = rentre.replace(new RegExp(' ', 'g'), '');	//Remplace les espaces et les virgules, pour le format numériques pour les calculs
         rentre = rentre.replace(new RegExp(',', 'g'), '.');
@@ -54,4 +56,5 @@ function ajout(evenement) {
         document.formulaire.rentre.value = '';
         document.formulaire.rentre2.value = rentreGlobal;
     }
+       
 }
