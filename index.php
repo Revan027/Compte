@@ -4,6 +4,7 @@
         
         <script src="./jquery-3.2.1.js"></script>
         <script type="text/javascript" src="./Controller/codeAjax.js" > </script> 
+         <script type="text/javascript" src="./Controller/changeView.js" > </script> 
         <script type="text/javascript" src="./Controller/verification.js" ></script>
      
 
@@ -21,11 +22,11 @@
             <div id="barreD"></div>	
 
             <div id="centre">
-
+                
+                <h3><a onclick="changeView(1);">Tableau de compte</a> / <a onclick="changeView(2);">Autre</a></h3>
+                
                 <div id="afficherTableau" ></div>
-                    
-                   
-
+ 
                 <form name='formulaire'>
                  
                     <h3> Entrez vos informations à enregister</h3>

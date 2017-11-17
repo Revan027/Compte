@@ -58,8 +58,13 @@ function createXHR2(annee) {
     }
 
     xhr.onreadystatechange = function () {
-        if (xhr.readyState == 4) {	//Si etape 4 terminé. Serveur renvoie les données en reponse de affichertableau()
-            document.getElementById('afficherTableau').innerHTML = xhr.responseText;	//injecte le code html renvoyé
+       if((xhr.readyState) != 4) {
+             document.getElementById('afficherTableau').innerHTML = "<img src='./images/chargement.gif' />";
+        }
+        else if(xhr.readyState == 4) {	//Si etape 4 terminé. Serveur renvoie les données en reponse de affichertableau()
+            
+              document.getElementById('afficherTableau').innerHTML = xhr.responseText;  //injecte le code html renvoyé
+              $( "#afficherTableau" ).slideDown("slow"); 	
         }
     }
     xhr.open("POST", "./Model/afficheAnnee.php", true);
@@ -91,3 +96,4 @@ function deleteAjax(id, annee) {
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.send("id=" + id + "&annee=" + annee);
 }
+

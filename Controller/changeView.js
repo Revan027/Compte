@@ -1,0 +1,31 @@
+
+function changeView(page){
+   
+    $( "#afficherTableau" ).slideUp("slow"); 
+    setTimeout(function(){ 
+         viewMainChange(page);  
+ 
+     }, 2000);   
+}
+
+function viewMainChange(page){
+    
+    if(page===1){
+        createXHR2(2017);
+    }else{
+        
+        var box = $('#afficherTableau');
+
+        $.ajax({
+
+           url : './templates/mainDepense.php', // La ressource ciblée
+           type : 'GET', // Le type de la requête HTTP
+           dataType : 'html', // Le type de données à recevoir, ici, du HTML.
+           success: function (data) {
+                // Je charge les données dans box
+                box.html(data);
+                $( "#afficherTableau" ).slideDown("slow"); 
+            }
+        });
+    }    
+}

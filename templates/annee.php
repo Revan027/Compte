@@ -1,5 +1,3 @@
-<h3>Visualisation</h3>
-
 <?php if (!empty($arrAll)) { ?>
     <div id='selectionAnnee'>
         <ol name='liste'>
