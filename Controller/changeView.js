@@ -4,8 +4,7 @@ function changeView(page){
     $( "#afficherTableau" ).slideUp("slow"); 
     setTimeout(function(){ 
          viewMainChange(page);  
- 
-     }, 2000);   
+     }, 1000);   
 }
 
 function viewMainChange(page){
@@ -18,7 +17,7 @@ function viewMainChange(page){
 
         $.ajax({
 
-           url : './templates/mainDepense.php', // La ressource ciblée
+           url : './Model/getMainDepense.php', // La ressource ciblée
            type : 'GET', // Le type de la requête HTTP
            dataType : 'html', // Le type de données à recevoir, ici, du HTML.
            success: function (data) {
@@ -27,5 +26,7 @@ function viewMainChange(page){
                 $( "#afficherTableau" ).slideDown("slow"); 
             }
         });
+        
+  
     }    
 }

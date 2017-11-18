@@ -306,7 +306,9 @@ legend{
     float:right;
     width:300px;
 }
-
+#change {
+    cursor:pointer;
+}
 #imgAdd{
     margin-left:10px;
     margin-right:10px;
@@ -316,4 +318,15 @@ legend{
     cursor:pointer;
     opacity: 0.5;
     filter: alpha(opacity=50); 
+}
+
+
+#pair{
+     background-color:gray;
+    background-repeat:repeat;
+}
+
+#impair{
+     background-color:silver;
+    background-repeat:repeat;
 }

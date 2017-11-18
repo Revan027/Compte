@@ -4,8 +4,9 @@
         
         <script src="./jquery-3.2.1.js"></script>
         <script type="text/javascript" src="./Controller/codeAjax.js" > </script> 
-         <script type="text/javascript" src="./Controller/changeView.js" > </script> 
+        <script type="text/javascript" src="./Controller/changeView.js" > </script> 
         <script type="text/javascript" src="./Controller/verification.js" ></script>
+        <script type="text/javascript" src="./Controller/mainDepense.js" ></script>
      
 
     </head>
@@ -23,7 +24,7 @@
 
             <div id="centre">
                 
-                <h3><a onclick="changeView(1);">Tableau de compte</a> / <a onclick="changeView(2);">Autre</a></h3>
+                <h3><a id ='change' onclick="changeView(1);">Tableau de compte</a> / <a id ='change' onclick="changeView(2);">Autre</a></h3>
                 
                 <div id="afficherTableau" ></div>
  
