@@ -2,13 +2,12 @@
     <head>
         <link rel="stylesheet"  href="./feuille.css"/>
         
-        <script src="./jquery-3.2.1.js"></script>
+        <script src="./lib/jquery-3.2.1.js"></script>
         <script type="text/javascript" src="./Controller/codeAjax.js" > </script> 
         <script type="text/javascript" src="./Controller/changeView.js" > </script> 
         <script type="text/javascript" src="./Controller/verification.js" ></script>
         <script type="text/javascript" src="./Controller/mainDepense.js" ></script>
-     
-
+    
     </head>
 
     <body onload='raz();'> 
@@ -22,12 +21,12 @@
 
             <div id="barreD"></div>	
 
-            <div id="centre">
+            <div id="centre"> 
                 
-                <h3><a id ='change' onclick="changeView(1);">Tableau de compte</a> / <a id ='change' onclick="changeView(2);">Autre</a></h3>
-                
+                <h3><a id ='change1' onclick="changeView(1);">Tableau de compte</a> <img src='./images/doubleFleche.png'/> <a id ='change2' onclick="changeView(2);">Dépense mensuel fixe</a></h3>
+         
                 <div id="afficherTableau" ></div>
- 
+
                 <form name='formulaire'>
                  
                     <h3> Entrez vos informations à enregister</h3>
@@ -81,7 +80,7 @@
    	
                     </div>
                 </form>
-            </div>
+            </div>	
         </div>	
         <div id="footer">
             <p class="signature">Développée  par Freyss M</p><p class="version">Gestion Comptes . Version 1.6</p>
