@@ -12,7 +12,10 @@ function postMainDepense(){
           
             url : './Model/getMainDepense.php', // La ressource ciblée
             type : 'POST', // Le type de la requête HTTP
-            data : 'nameDp=' + nameDp + '&sommes=' + sommes,
+            data: {
+                nameDp: nameDp,
+                sommes: sommes
+            }
            // Le type de données à recevoir, ici, du HTML.
             success: function (data) {
                 // Je charge les données dans box
@@ -28,7 +31,9 @@ function deleteMainDepense(id){
           
             url : './Model/getMainDepense.php', // La ressource ciblée
             type : 'POST', // Le type de la requête HTTP
-            data : 'id=' + id,
+            data : {
+                id: id
+            },
            // Le type de données à recevoir, ici, du HTML.
             success: function (data) {
                 // Je charge les données dans box
