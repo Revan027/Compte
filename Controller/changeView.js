@@ -12,9 +12,6 @@ function viewMainChange(page){
     if(page===1){
         createXHR2(2017);
     }else{
-        
-        var box = $('#afficherTableau');
-
         $.ajax({
 
            url : './Model/getMainDepense.php', // La ressource ciblée
@@ -22,7 +19,7 @@ function viewMainChange(page){
            dataType : 'html', // Le type de données à recevoir, ici, du HTML.
            success: function (data) {
                 // Je charge les données dans box
-                box.html(data);
+                $('#afficherTableau').html(data);
                 $( "#afficherTableau" ).slideDown("slow"); 
             }
         });
