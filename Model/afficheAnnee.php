@@ -2,4 +2,7 @@
 
 include('./getDB.php');
 
-afficherTableau($_POST['annee']);
+if(isset($_POST['annee'])){  
+    
+    afficherTableau($_POST['annee']);
+}
