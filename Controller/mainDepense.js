@@ -11,7 +11,7 @@ function postMainDepense(){
             data: {
                 nameDp: $('#nameDp').val(),
                 sommes: $('#sommes').val()
-            }
+            },
            // Le type de données à recevoir, ici, du HTML.
             success: function (data) {
                 // Je charge les données dans box
