@@ -67,10 +67,13 @@
         </tr>
     
     <?php } ?>
+ </table>
+
+ <table CELLPADDING='9' id="table3">   
         
     <tr class='hover' >
         <td class='fondTAutreTitre'>Bénéfice Annuelle</td>
-        <td class='fondDonnee' colspan='6'><?= $benefAnnu ?></td>
+        <td class='fondDonnee' colspan='<?= $tailleTab ?>'><?= $benefAnnu ?></td>
     </tr>
 
 </table>

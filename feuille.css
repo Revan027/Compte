@@ -202,17 +202,25 @@ textarea{
 }
 
 
+td{
+   width:120px;    
+}
 
-#table1{	
-    	   
-    width:1000px;                     
+#afficherTableau{
+     width:1000px;    
+}
+
+#table1{	   	                    
     font-size:13px;
     text-align:center;
 }
 
-#table2{	
-   
-    width:1000px; 
+#table3{	  width:1000px;      	                    
+    font-size:13px;
+    text-align:center;
+}
+
+#table2{	   
     border-top:0px;   
     font-size:13px;
     text-align:center;
@@ -243,6 +251,7 @@ textarea{
     background-repeat:repeat;
     border-right:1px solid silver;    
     font-weight: bold;
+   /* width:150px;*/
 }
 
 .fondDonnee{
