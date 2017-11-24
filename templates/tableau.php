@@ -30,8 +30,8 @@
             <td class='fondDonnee'><?= $arrAll[$i]['benefice'] ?></td>
         <?php } ?>
     </tr>
- </table>
-<table CELLPADDING='9' id="table2">
+
+
     <?php if ($scinder == true) { ?>
     
         <tr>
@@ -65,15 +65,16 @@
                 <td class='fondDonnee'><?= $arrAll[$i]['benefice'] ?></td>
             <?php } ?>
         </tr>
+            
+        <tr class='hover' >
+            <td class='fondTAutreTitre'>Bénéfice Annuelle</td>
+            <td class='fondDonnee' colspan='<?= 6 ?>'><?= $benefAnnu ?></td>
+        </tr>
     
+    <?php }else{ ?>
+        <tr class='hover' >
+            <td class='fondTAutreTitre'>Bénéfice Annuelle</td>
+            <td class='fondDonnee' colspan='<?= $tailleTab ?>'><?= $benefAnnu ?></td>
+        </tr>
     <?php } ?>
- </table>
-
- <table CELLPADDING='9' id="table3">   
-        
-    <tr class='hover' >
-        <td class='fondTAutreTitre'>Bénéfice Annuelle</td>
-        <td class='fondDonnee' colspan='<?= $tailleTab ?>'><?= $benefAnnu ?></td>
-    </tr>
-
 </table>

@@ -1,8 +1,9 @@
 function postMainDepense(){
     
-       /* somme = somme.replace(new RegExp(' ', 'g'), '');
-        somme = somme.replace(new RegExp(',', 'g'), '.');
-        somme = parseFloat(somme);	*/
+        var sommes =  $('#sommes').val();
+        sommes = sommes.replace(new RegExp(' ', 'g'), '');
+        sommes = sommes.replace(new RegExp(',', 'g'), '.');
+        sommes = parseFloat(sommes);	
 
         $.ajax({
           
@@ -10,7 +11,7 @@ function postMainDepense(){
             type : 'POST', // Le type de la requête HTTP
             data: {
                 nameDp: $('#nameDp').val(),
-                sommes: $('#sommes').val()
+                sommes:sommes
             },
            // Le type de données à recevoir, ici, du HTML.
             success: function (data) {
