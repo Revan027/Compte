@@ -1,7 +1,10 @@
-<html><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<?php  session_start ();
+    if (isset($_SESSION['login']) && isset($_SESSION['mdp'])) {  ?>
+     
+        <html><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <head>
         <link rel="stylesheet"  href="./feuille.css"/>
-        
+        <link rel="icon" type="image/png" href="./images/changeView1.png" />
         <script src="./lib/jquery-3.2.1.js"></script>
         <script type="text/javascript" src="./Controller/codeAjax.js" > </script> 
         <script type="text/javascript" src="./Controller/changeView.js" > </script> 
@@ -10,7 +13,7 @@
     
     </head>
 
-    <body onload='raz();'> 
+    <body onload='raz();' onbeforeunload=' window.alert("Au revoir");'> 
 
         <div id="top">
             <img class="titre" src="images\titre.png"/>
@@ -83,7 +86,13 @@
             </div>	
         </div>	
         <div id="footer">
-            <p class="signature">Développée  par Freyss M</p><p class="version">Gestion Comptes . Version 1.7</p>
+            <p class="signature">Développée  par Freyss M</p><p class="version">Gestion Comptes . Version 1.8</p>
         </div>	
     </body>
 </html>
+<?php    
+        
+    }else {
+        require_once "./templates/identify.php";
+    }
+?>

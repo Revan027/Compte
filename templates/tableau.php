@@ -12,14 +12,14 @@
     <tr class='hover'>
         <td class='fondTAutreTitre'>Rentrées d'argents</td>
         <?php for ($i = 0; $i < $tailleTab; $i++) { ?>
-            <td class='fondDonnee'><?= $arrAll[$i]['salaire'] ?></td>
+            <td class='fondDonneeS'><?= $arrAll[$i]['salaire'] ?></td>
         <?php } ?>
     </tr>
     
     <tr class='hover'>
         <td class='fondTAutreTitre'>Dépenses</td>
         <?php for ($i = 0; $i < $tailleTab; $i++) { ?>
-            <td class='fondDonnee'><?= $arrAll[$i]['depense'] ?></td>
+            <td class='fondDonneeD'><?= $arrAll[$i]['depense'] ?></td>
         <?php } ?>
     </tr>
     
@@ -27,7 +27,7 @@
         <td class='fondTAutreTitre'>Bénéfices</td>
         <?php for ($i = 0; $i < $tailleTab; $i++) { ?>
             <?php $benefAnnu = $benefAnnu + $arrAll[$i]['benefice']; ?>
-            <td class='fondDonnee'><?= $arrAll[$i]['benefice'] ?></td>
+            <td class='fondDonneeB'><?= $arrAll[$i]['benefice'] ?></td>
         <?php } ?>
     </tr>
 
@@ -47,14 +47,14 @@
         <tr class='hover'>
             <td class='fondTAutreTitre'>Rentrées d'argents</td>
             <?php for ($i = 6; $i < $tailleTabScinder; $i++) { ?>
-                <td class='fondDonnee'><?= $arrAll[$i]['salaire'] ?></td>
+                <td class='fondDonneeS'><?= $arrAll[$i]['salaire'] ?></td>
             <?php } ?>
         </tr>
         
         <tr class='hover'>
             <td class='fondTAutreTitre'>Dépenses</td>
             <?php for ($i = 6; $i < $tailleTabScinder; $i++) { ?>
-                <td class='fondDonnee'><?= $arrAll[$i]['depense'] ?></td>
+                <td class='fondDonneeD'><?= $arrAll[$i]['depense'] ?></td>
             <?php } ?>
         </tr>
         
@@ -62,7 +62,7 @@
             <td class='fondTAutreTitre'>Bénéfices</td>
             <?php for ($i = 6; $i < $tailleTabScinder; $i++) { ?>
                 <?php $benefAnnu = $benefAnnu + $arrAll[$i]['benefice']; ?>
-                <td class='fondDonnee'><?= $arrAll[$i]['benefice'] ?></td>
+                <td class='fondDonneeB'><?= $arrAll[$i]['benefice'] ?></td>
             <?php } ?>
         </tr>
             
