@@ -196,9 +196,22 @@ textarea{
     background-image:url(images/fondTextArea.png);
     background-repeat: repeat;
 }
+
 .bouton{
     width:140px;
     height:30px;
+    color:white;
+    margin-top:10px;
+    border-radius: 6px;
+    border:0px;
+    background:linear-gradient( to top right, rgba(63,81,181,1) 0%, rgba(3,155,229 ,1) 60%);
+    box-shadow: 1px 1px 30px rgba(2,119,189 ,1); 
+}
+
+.bouton:hover{
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
 }
 
 
@@ -246,16 +259,31 @@ td{
    /* width:150px;*/
 }
 
-.fondDonnee{
+.fondDonneeS, .fondDonneeB, .fondDonneeD, .fondDonnee {
     background-image:url(images/fondFieldset.png);
     background-repeat:repeat; 
-    font-style: italic;
+    font-style: italic; 
+    font-size:16px; 
+    font-family:"Cursive", times, serif;
+     font-weight: bold;
 }
 
-.hover:hover {
-    background-image:url(images/fondT3.png);
-    background-repeat: repeat-x;
+.fondDonneeS {
+    color:#314844;
 }
+
+.fondDonneeB {
+    color:#047263;
+}
+
+.fondDonneeD {
+    color:#02322B;
+}
+
+
+
+
+
 
 .hover:hover .fondDonnee {
     color:white;
@@ -286,7 +314,7 @@ td{
     height:20px;
     font-size:13px;
     font-weight:bold;
-    margin-bottom:15px;
+    margin-bottom:25px;
 }
 ol{ 
     float:left;
@@ -297,8 +325,7 @@ ol{
 li{
     float:left; /*pour IE*/
     padding-left:25px;
-    width:50px;
-    background-color:silver;
+    width:50px; 
     margin-right:15px;
     background-image:url(images/fleche.png);
     background-repeat:no-repeat;
@@ -366,4 +393,20 @@ legend{
    font-style: italic;
    margin-top:10px;
    color:midnightblue;
+}
+
+/*Identification*/
+
+.login{
+    box-shadow:1px 1px 1px #D83F3D;background-color:#FFF3F3;
+    
+}
+
+.mdp{
+    background-color:#FFF3F3;
+    box-shadow:1px 1px 1px #D83F3D;
+}
+
+input:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0 1000px white inset;
 }
