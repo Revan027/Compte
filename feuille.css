@@ -2,8 +2,11 @@
 body{
     padding:0px;
     margin:0px;
-    background-image:url(images/fondFieldset.png);
-    background-repeat:repeat;
+    background: #f2f6f8; /* Old browsers */
+    background: -moz-linear-gradient(left, #f2f6f8 2%, #f2f6f8 2%, #d8e1e7 50%, #e0eff9 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #f2f6f8 2%,#f2f6f8 2%,#d8e1e7 50%,#e0eff9 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #f2f6f8 2%,#f2f6f8 2%,#d8e1e7 50%,#e0eff9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9',GradientType=1 ); /* IE6-9 */
 }
 
 h3{
@@ -40,7 +43,7 @@ h3{
 
 #mainConteneur{
     width:100%; 
-    min-height:1024px;
+    min-height:1400px;
     font-family:"Lucida Sans Unicode", "Lucida Grande", Sans-Serif;	
 }
 
@@ -237,35 +240,40 @@ td{
 }*/
 
 
-.titremois{
-    background-image:url(images/fondT.png);
-    background-repeat: repeat-x;
-    font-weight: bold;
+.titremois, .fondMois{
+    background: rgb(139,173,211); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(139,173,211,1) 0%, rgba(164,196,222,1) 50%, rgba(153,189,221,1) 51%, rgba(200,220,236,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(139,173,211,1) 0%,rgba(164,196,222,1) 50%,rgba(153,189,221,1) 51%,rgba(200,220,236,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(139,173,211,1) 0%,rgba(164,196,222,1) 50%,rgba(153,189,221,1) 51%,rgba(200,220,236,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8badd3', endColorstr='#c8dcec',GradientType=0 ); /* IE6-9 */
+    border:1px solid gray;   
 }
 
-.fondMois{
-    background-image:url(images/fondT.png);
-    background-repeat: repeat-x;
-    border-right:1px solid gray;       
+.fondMois{    
     font-style: italic;
     font-weight: bold;
+   
 }
 
 .fondTAutreTitre{
     background-color:silver;
     background-repeat:repeat;
-    border-right:1px solid silver;    
-    font-weight: bold;
+    border:1px solid gray;    
+ 
    /* width:150px;*/
 }
 
 .fondDonneeS, .fondDonneeB, .fondDonneeD, .fondDonnee {
-    background-image:url(images/fondFieldset.png);
-    background-repeat:repeat; 
-    font-style: italic; 
+    background: rgb(227,233,237); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(227,233,237,1) 0%, rgba(219,225,229,1) 10%, rgba(206,212,218,1) 25%, rgba(206,213,220,1) 37%, rgba(208,215,222,1) 50%, rgba(191,200,209,1) 51%, rgba(217,225,229,1) 83%, rgba(229,237,239,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(227,233,237,1) 0%,rgba(219,225,229,1) 10%,rgba(206,212,218,1) 25%,rgba(206,213,220,1) 37%,rgba(208,215,222,1) 50%,rgba(191,200,209,1) 51%,rgba(217,225,229,1) 83%,rgba(229,237,239,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(227,233,237,1) 0%,rgba(219,225,229,1) 10%,rgba(206,212,218,1) 25%,rgba(206,213,220,1) 37%,rgba(208,215,222,1) 50%,rgba(191,200,209,1) 51%,rgba(217,225,229,1) 83%,rgba(229,237,239,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e9ed', endColorstr='#e5edef',GradientType=0 ); /* IE6-9 */
+    font-style: italic;  
+    border:1px solid silver;  
     font-size:16px; 
     font-family:"Cursive", times, serif;
-     font-weight: bold;
+    font-weight: bold;
 }
 
 .fondDonneeS {
@@ -410,3 +418,6 @@ legend{
 input:-webkit-autofill{
     -webkit-box-shadow: 0 0 0 1000px white inset;
 }
+
+
+
