@@ -1,4 +1,4 @@
-<table CELLPADDING='9'>
+<table CELLPADDING='9' style="margin-top:15px;">
      <tr>
          <?php $separate=0; $totalMainDep = 0; for ($i = 0; $i < count($arrAll); $i++) { ?>
              <?php  if($i%2 == 0){ ?>
