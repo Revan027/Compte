@@ -20,7 +20,10 @@ h3{
     text-shadow: 2px 2px 2px black;
 
 }
-
+#h3Margin{
+       margin-bottom:0px;
+    
+}
  
 #change1:hover{
     cursor:pointer;
@@ -205,14 +208,15 @@ textarea{
     height:30px;
     color:white;
     margin-top:10px;
-    border-radius: 6px;
+    border-radius: 6px; cursor:pointer;
     border:0px;
     background:linear-gradient( to top right, rgba(63,81,181,1) 0%, rgba(3,155,229 ,1) 60%);
     box-shadow: 1px 1px 30px rgba(2,119,189 ,1); 
 }
 
 .bouton:hover{
-    opacity: 0.5;
+    opacity: 0.5; 
+   
     filter:alpha(opacity=50);
     -moz-opacity:0.5;
 }

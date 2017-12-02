@@ -26,7 +26,7 @@
 
             <div id="centre"> 
                 
-                <h3><a id ='change1' onclick="changeView(1);">Tableau de compte</a> <img src='./images/doubleFleche.png'/> <a id ='change2' onclick="changeView(2);">Dépense mensuel fixe</a></h3>
+                <h3 id="h3Margin"><a id ='change1' onclick="changeView(1);">Tableau de compte</a> <img src='./images/doubleFleche.png'/> <a id ='change2' onclick="changeView(2);">Dépense mensuel fixe</a></h3>
          
                 <div id="afficherTableau" ></div>
 
