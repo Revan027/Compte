@@ -21,7 +21,7 @@ h3{
 
 }
 #h3Margin{
-       margin-bottom:0px;
+       margin-bottom:15px;
     
 }
  
@@ -267,7 +267,7 @@ td{
    /* width:150px;*/
 }
 
-.fondDonneeS, .fondDonneeB, .fondDonneeD, .fondDonnee {
+.fondDonneeS, .fondDonneeB, .fondDonneeD, .fondDonnee, .fondDonneeA {
     background: rgb(227,233,237); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(227,233,237,1) 0%, rgba(219,225,229,1) 10%, rgba(206,212,218,1) 25%, rgba(206,213,220,1) 37%, rgba(208,215,222,1) 50%, rgba(191,200,209,1) 51%, rgba(217,225,229,1) 83%, rgba(229,237,239,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(227,233,237,1) 0%,rgba(219,225,229,1) 10%,rgba(206,212,218,1) 25%,rgba(206,213,220,1) 37%,rgba(208,215,222,1) 50%,rgba(191,200,209,1) 51%,rgba(217,225,229,1) 83%,rgba(229,237,239,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -322,31 +322,14 @@ td{
 
 /*Liste d'année*/
 
-#selectionAnnee{
-    height:20px;
-    font-size:13px;
-    font-weight:bold;
-    margin-bottom:25px;
+.fondDonneeA{ 
+    cursor:pointer;  
 }
-ol{ 
-    float:left;
-    margin:0;
-    padding:0;
-    list-style-type:none;
-}
-li{
-    float:left; /*pour IE*/
-    padding-left:25px;
-    width:50px; 
-    margin-right:15px;
-    background-image:url(images/fleche.png);
-    background-repeat:no-repeat;
-}
-li:hover {
+
+.fondDonneeA:hover{
     cursor:pointer;
-    color:red;
-    background-image:url(images/fleche2.png);
-    background-repeat:no-repeat;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
 }
 
 /*fieldset*/
