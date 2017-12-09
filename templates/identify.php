@@ -6,9 +6,12 @@
     </head>
     
     <body>
+        <div id="top">
+            <img class="titre" src="images\titre.png"/>
+        </div>	
     <form action="./Controller/login.php" method="post" autocomplete="off">
         
-        <fieldset>
+        <fieldset id="fieldset">
             <legend>Identification</legend>
              Votre login : <input type="text" name="login"  />
             <br /><br />
@@ -16,6 +19,10 @@
             <input type="submit" class="bouton" value="Connexion">
          </fieldset>
     </form>
+        
+    <div id="footer">
+        <p class="signature">Développée  par Freyss M</p><p class="version">Gestion Comptes . Version 1.8</p>
+    </div>	
     </body>
 </html>
 <?php }

@@ -14,9 +14,7 @@
             session_start ();
             $_SESSION['login'] = $login;
             $_SESSION['mdp'] = $mdp; 
-
-            header ('location: ../index.php');//redirection de page
-        }else{
-            header ('location: ../index.php');   
         }
+        
+        header ('location: ../index.php');   //redirection de page
     }

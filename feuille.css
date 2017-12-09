@@ -2,7 +2,7 @@
 body{
     padding:0px;
     margin:0px;
-    background: #f2f6f8; /* Old browsers */
+    background: #b0a48d; /* Old browsers */
     background: -moz-linear-gradient(left, #f2f6f8 2%, #f2f6f8 2%, #d8e1e7 50%, #e0eff9 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left, #f2f6f8 2%,#f2f6f8 2%,#d8e1e7 50%,#e0eff9 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right, #f2f6f8 2%,#f2f6f8 2%,#d8e1e7 50%,#e0eff9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -10,20 +10,32 @@ body{
 }
 
 h3{
-    width:auto;
-    margin-left:-80px;
-    padding-left:5px;
-    background-image:url(images/fondBarre.png);	
-    background-repeat:repeat;
-    border:3px groove gray;
-    color:white;	
-    text-shadow: 2px 2px 2px black;
+    margin:0;
+    color:black;	
+    text-shadow: 2px 2px 2px gray; 
+    font-size:15px; 
 
 }
-#h3Margin{
-       margin-bottom:15px;
-    
+#boxH{
+    width:auto; 
+    height:30px;
+    max-width:1900px;
+    padding-top:5px;
+    padding-left:10px;
+    margin-top:15px;
+    margin-bottom:40px;
+    background: #a9bfc9; /* Old browsers */
+    background: -moz-linear-gradient(top, #a9bfc9 0%, #95b1bd 50%, #85a2ad 51%, #537585 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #a9bfc9 0%,#95b1bd 50%,#85a2ad 51%,#537585 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #a9bfc9 0%,#95b1bd 50%,#85a2ad 51%,#537585 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    -webkit-box-shadow: -3px 17px 14px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 17px 14px -10px rgba(0,0,0,0.75);
+    box-shadow: -3px 17px 14px -10px rgba(0,0,0,0.75);
+    border-width:1px 1px 1px 1px;
+    border-style:solid ;
+    border-color:gray;
 }
+
  
 #change1:hover{
     cursor:pointer;
@@ -36,12 +48,13 @@ h3{
 }
 
 #top {
-    position:relative;
+     position:fixed;
     z-index:3;
-    width:100%;
+
     height:60px;
-    background-image:url(images/top.png);	
-    background-repeat:repeat;	
+    top:0;
+    right:0;
+	
 } 
 
 #mainConteneur{
@@ -50,33 +63,9 @@ h3{
     font-family:"Lucida Sans Unicode", "Lucida Grande", Sans-Serif;	
 }
 
-#barreG{
-    position:fixed;/*met une position fixe*/
-    z-index:2;/*superposition. utlisable avec position seulement*/
-    width:170px; 
-    height:100%;/*taille de l'ecran entier meme en zoomant*/
-    left:0;/*place l'element sur la page*/
-    top:0;
-    background-image:url(images/fondBarre.png);	
-    background-repeat:repeat;
-    border-right:3px solid black;
-}
-
-#barreD{
-    position:fixed;
-    z-index:2;
-    width:140px; 
-    height:100%;
-    top:0;
-    right:0;
-    background-image:url(images/fondBarre.png);	
-    background-repeat:repeat;
-    border-left:3px solid black;
-}
-
 #centre {
-    width:1024px;
-    margin:auto;
+    max-width:1200px;
+    margin-left:100px; margin-bottom:50px;
     font-size:13px;  
 } 
 
@@ -147,21 +136,24 @@ marquee{
     position:fixed;	
     z-index:3;
     bottom:0;	
-    width:100%; 
-    height:60px;
-    background-image:url(images/fondT3.png);	
-    background-repeat:repeat-x;
-    text-align:center;
+    width:100%;
+    height:30px;
+    background: rgb(157,157,157); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(157,157,157,1) 0%, rgba(164,164,164,1) 12%, rgba(171,171,171,1) 25%, rgba(154,154,154,1) 39%, rgba(139,139,139,1) 50%, rgba(115,115,115,1) 51%, rgba(124,124,124,1) 60%, rgba(138,138,138,1) 76%, rgba(130,130,130,1) 91%, rgba(125,125,125,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(157,157,157,1) 0%,rgba(164,164,164,1) 12%,rgba(171,171,171,1) 25%,rgba(154,154,154,1) 39%,rgba(139,139,139,1) 50%,rgba(115,115,115,1) 51%,rgba(124,124,124,1) 60%,rgba(138,138,138,1) 76%,rgba(130,130,130,1) 91%,rgba(125,125,125,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(157,157,157,1) 0%,rgba(164,164,164,1) 12%,rgba(171,171,171,1) 25%,rgba(154,154,154,1) 39%,rgba(139,139,139,1) 50%,rgba(115,115,115,1) 51%,rgba(124,124,124,1) 60%,rgba(138,138,138,1) 76%,rgba(130,130,130,1) 91%,rgba(125,125,125,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9d9d9d', endColorstr='#7d7d7d',GradientType=0 ); /* IE6-9 */
+    text-align:center;  border:1px solid black;
     color:white;	
 }
 .version{
     font-size:11px;
-    margin-top:40px;
+    margin-top:10px;
     text-shadow: 2px 2px 2px black;
 }
 .signature{
     float:right;
-    margin-top:35px;
+    margin-top:10px;
     margin-right:10px;
     font-size:0.6em;
     text-shadow: 2px 2px 2px black;
@@ -169,30 +161,7 @@ marquee{
 .titre{
     margin-bottom:50px;
 }
-/*#barreG{
-        float:left;
-        width:10%; 
-        height:100%;
-        background-image:url(images/fondT3.png);	
-        background-repeat:repeat;
-}
-#barreD{
-        float:right;
-        width:10%; 
-        height:100%;
-        background-image:url(images/fondT3.png);	
-        background-repeat:repeat;
-}
-#footer{
-        clear:both; 
-        width:100%; 
-        height:60px;
-        background-image:url(images/fondT3.png);	
-        background-repeat:repeat-x;
-        text-align:center;
-        color:white;	
-}
-*/
+
 
 textarea{
     width:700px;
@@ -227,7 +196,8 @@ td{
 }
 
 #afficherTableau{
-    width:985px; 
+    width:985px;     
+    margin-left:30px;
 }
 
 #table1{	   	                    
@@ -236,12 +206,7 @@ td{
 }
 
 
-    /*-moz-border-radius: 20px;
-    border-radius: 20px;
-    -khtml-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    border-bottom: 1px solid #fff;
-}*/
+
 
 
 .titremois, .fondMois{
@@ -334,12 +299,16 @@ td{
 
 /*fieldset*/
 
-fieldset{
+#fieldset{
     margin-top:10px;  
     background-image:url(images/fondFieldset.png);
     background-repeat:repeat;
 }
 
+#fieldset2{
+    background-image:url(images/fondFieldset.png);
+    background-repeat:repeat;
+}
 legend{
     font-weight:bold;
 }
@@ -407,4 +376,62 @@ input:-webkit-autofill{
 }
 
 
+
+/**/
+#barreG{
+    position:fixed;/*met une position fixe*/
+    z-index:2;/*superposition. utlisable avec position seulement*/
+    width:60px; 
+    height:100%;/*taille de l'ecran entier meme en zoomant*/
+    left:0;/*place l'element sur la page*/
+    top:0;
+    background-color:black;
+    background-repeat:repeat;
+    border-right:1px solid silver;
+}
+
+#barreD{
+    position:fixed;
+    z-index:2;
+    width:60px; 
+    height:100%;
+    top:0;
+    right:0;
+    background-color:black;
+    background-repeat:repeat;
+    border-left:1px solid silver;
+}
+
+/*#barreG{
+        float:left;
+        width:10%; 
+        height:100%;
+        background-image:url(images/fondT3.png);	
+        background-repeat:repeat;
+}
+#barreD{
+        float:right;
+        width:10%; 
+        height:100%;
+        background-image:url(images/fondT3.png);	
+        background-repeat:repeat;
+}
+#footer{
+        clear:both; 
+        width:100%; 
+        height:60px;
+        background-image:url(images/fondT3.png);	
+        background-repeat:repeat-x;
+        text-align:center;
+        color:white;	
+}
+*/
+
+    /*-moz-border-radius: 20px;
+    border-radius: 20px;
+    -khtml-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-bottom: 1px solid #fff;
+}*/
+/**/
 

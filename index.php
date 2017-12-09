@@ -20,21 +20,21 @@
         </div>	
         <div id="mainConteneur">	
 
-            <div id="barreG"></div>	
-
-            <div id="barreD"></div>	
-
+          
+            
+            <div id="boxH"> <h3><a id ='change1' onclick="changeView(1);">Tableau de compte</a> <img src='./images/doubleFleche.png'/> <a id ='change2' onclick="changeView(2);">Dépense mensuel fixe</a></h3></div>
+           
+            
             <div id="centre"> 
                 
-                <h3 id="h3Margin"><a id ='change1' onclick="changeView(1);">Tableau de compte</a> <img src='./images/doubleFleche.png'/> <a id ='change2' onclick="changeView(2);">Dépense mensuel fixe</a></h3>
-         
                 <div id="afficherTableau" ></div>
-
+            </div>        
                 <form name='formulaire'>
                  
-                    <h3> Entrez vos informations à enregister</h3>
-
-                    <fieldset>
+                    <div id="boxH"> <h3> Entrez vos informations à enregister</h3></div>
+              
+            <div id="centre">            
+                    <fieldset id="fieldset">
                         Année :
                         <SELECT name="annee" size="1">
                             <OPTION>2017
@@ -59,7 +59,7 @@
                         </SELECT><br/>
                     </fieldset>
 
-                    <fieldset>
+                    <fieldset id="fieldset">
                         <legend>Cliquez sur l'icône 'plus' pour ajouter chaque rentrée d'argent</legend>
                         Rentrée d'argent : <input type='text' name='rentre' maxlength="8"/><img id="imgAdd" src="./images/addition.png" onClick="ajout(event);"><input type='text' name='rentre2' disabled /><br/>
                     </fieldset>
@@ -70,7 +70,7 @@
 
                         <div id="fieldsetBlocCopier">
 
-                            <fieldset>
+                            <fieldset id="fieldset">
                                 <legend>Avez vous finit de copier vos données ?</legend>
                                 <input type="checkbox" id="oui" name="oui" value="oui">
                                 <label for="coding">Oui</label>				  
@@ -86,7 +86,7 @@
             </div>	
         </div>	
         <div id="footer">
-            <p class="signature">Développée  par Freyss M</p><p class="version">Gestion Comptes . Version 1.8</p>
+            <p class="signature">Développée  par Freyss M</p><p class="version">Gestion Comptes . Version 1.9</p>
         </div>	
     </body>
 </html>
