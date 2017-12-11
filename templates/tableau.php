@@ -25,9 +25,13 @@
     
     <tr class='hover'>
         <td class='fondTAutreTitre'>Bénéfices</td>
-        <?php for ($i = 0; $i < $tailleTab; $i++) { ?>
+        <?php for ($i = 0; $i < $tailleTab; $i++) { 
+            if($arrAll[$i]['benefice']<=0){ ?> 
+                <td  class='fondDonneeBN'><?= $arrAll[$i]['benefice'] ?></td>   
+            <?php }else{ ?>    
+                <td class='fondDonneeB'><?= $arrAll[$i]['benefice'] ?></td>
+             <?php } ?>
             <?php $benefAnnu = $benefAnnu + $arrAll[$i]['benefice']; ?>
-            <td class='fondDonneeB'><?= $arrAll[$i]['benefice'] ?></td>
         <?php } ?>
     </tr>
 
@@ -60,10 +64,14 @@
         
         <tr class='hover'>
             <td class='fondTAutreTitre'>Bénéfices</td>
-            <?php for ($i = 6; $i < $tailleTabScinder; $i++) { ?>
-                <?php $benefAnnu = $benefAnnu + $arrAll[$i]['benefice']; ?>
+            <?php for ($i = 6; $i < $tailleTabScinder; $i++) { 
+            if($arrAll[$i]['benefice']<=0){ ?> 
+                <td class='fondDonneeBN'><?= $arrAll[$i]['benefice'] ?></td>   
+            <?php }else{ ?>    
                 <td class='fondDonneeB'><?= $arrAll[$i]['benefice'] ?></td>
-            <?php } ?>
+             <?php } ?>
+            <?php $benefAnnu = $benefAnnu + $arrAll[$i]['benefice']; ?>
+        <?php } ?>
         </tr>
             
         <tr class='hover' >
