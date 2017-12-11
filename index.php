@@ -33,7 +33,7 @@
                  
                     <div id="boxH"> <h3> Entrez vos informations à enregister</h3></div>
               
-            <div id="centre">            
+            <div id="centre2">            
                     <fieldset id="fieldset">
                         Année :
                         <SELECT name="annee" size="1">

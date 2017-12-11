@@ -27,7 +27,7 @@ function createXHR(copierGlobal1) {
         
                 $(document).ready(function() {
                      $('#infoBulleBox').hide(); 
-                     $( "#infoBulleBox" ).slideDown("slow");                 
+                     $( "#infoBulleBox" ).fadeIn("slow");                 
                 });
            
             }
@@ -58,19 +58,28 @@ function createXHR2(annee) {
     }
 
     xhr.onreadystatechange = function () {
+       
        if((xhr.readyState) != 4) {
-             document.getElementById('afficherTableau').innerHTML = "<img src='./images/chargement.gif' />";
+             document.getElementById('afficherTableau').innerHTML = "<center><img src='./images/chargement.gif' /></center>";
         }
         else if(xhr.readyState == 4) {	//Si etape 4 terminé. Serveur renvoie les données en reponse de affichertableau()
-            
-              document.getElementById('afficherTableau').innerHTML = xhr.responseText;  //injecte le code html renvoyé
-              $( "#afficherTableau" ).slideDown("slow"); 	
+             $( "#afficherTableau" ).fadeOut();
+             
+               setTimeout(function(){ 
+                document.getElementById('afficherTableau').innerHTML = xhr.responseText;
+               $( "#afficherTableau" ).fadeIn();
+             }, 400); 
+             
+               
+              //$( "#afficherTableau" ).slideDown("slow"); 
+              
         }
     }
     xhr.open("POST", "./Model/afficheAnnee.php", true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.send("annee=" + annee);
-}
+    
+ }
 
 function confirmation(id, annee) {
     if ((window.confirm("Voulez vous supprimer ce mois ?")) == true) {

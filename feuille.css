@@ -65,11 +65,18 @@ h3{
 
 #centre {
     max-width:1200px;
-    margin-left:100px; margin-bottom:50px;
+    min-height:  400px;  
+    margin-left:100px; 
+    margin-bottom:50px;
     font-size:13px;  
 } 
 
-
+#centre2{
+    max-width:1200px;    
+    margin-left:100px; 
+    margin-bottom:50px;
+   font-size:13px;  
+} 
 #barre{
     width:1024px;
     height:3px;
@@ -232,7 +239,7 @@ td{
    /* width:150px;*/
 }
 
-.fondDonneeS, .fondDonneeB, .fondDonneeD, .fondDonnee, .fondDonneeA {
+.fondDonneeS, .fondDonneeB, .fondDonneeD, .fondDonnee, .fondDonneeA, .fondDonneeBN {
     background: rgb(227,233,237); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(227,233,237,1) 0%, rgba(219,225,229,1) 10%, rgba(206,212,218,1) 25%, rgba(206,213,220,1) 37%, rgba(208,215,222,1) 50%, rgba(191,200,209,1) 51%, rgba(217,225,229,1) 83%, rgba(229,237,239,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(227,233,237,1) 0%,rgba(219,225,229,1) 10%,rgba(206,212,218,1) 25%,rgba(206,213,220,1) 37%,rgba(208,215,222,1) 50%,rgba(191,200,209,1) 51%,rgba(217,225,229,1) 83%,rgba(229,237,239,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -251,6 +258,10 @@ td{
 
 .fondDonneeB {
     color:#047263;
+}
+
+.fondDonneeBN {
+    color:red;
 }
 
 .fondDonneeD {

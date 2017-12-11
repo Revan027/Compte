@@ -1,7 +1,7 @@
 
 function changeView(page){
    
-    $( "#afficherTableau" ).slideUp("slow"); 
+    $( "#afficherTableau" ).fadeOut("slow"); 
     setTimeout(function(){ 
          viewMainChange(page);  
      }, 1000);   
@@ -20,7 +20,7 @@ function viewMainChange(page){
            success: function (data) {
                 // Je charge les données dans box
                 $('#afficherTableau').html(data);
-                $( "#afficherTableau" ).slideDown("slow"); 
+                $( "#afficherTableau" ).fadeIn("slow"); 
             }
         });
         
