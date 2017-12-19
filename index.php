@@ -22,7 +22,7 @@
 
           
             
-            <div id="boxH"> <h3><a id ='change1' onclick="changeView(1);">Tableau de compte</a> <img src='./images/doubleFleche.png'/> <a id ='change2' onclick="changeView(2);">Dépense mensuel fixe</a></h3></div>
+            <div id="boxH"> <h3><a id ='change1' onclick="changeView(1);">Visualisation des dépenses/bénéfices</a> <img src='./images/doubleFleche.png'/> <a id ='change2' onclick="changeView(2);">Dépense mensuel fixe</a></h3></div>
            
             
             <div id="centre"> 
@@ -66,12 +66,12 @@
 
                     <div id="blocCopier">
 
-                        <textarea name='copier' onBlur="reecrire()" onkeypress="bloquer(event)" onclick="effacer();" >Copiez Coller vos données (si sur plusieurs page 'envoyez les données' a chaque page) du 28 au 28 de chaque mois par exemple</textarea>
+                        <textarea name='copier' onBlur="reecrire()" onkeypress="bloquer(event)" onclick="effacer();" >Copiez Coller vos données (si plusieurs pages à copier, copiez chaque page et cliquez sur 'envoyez les données') du 28 au 28 de chaque mois par exemple</textarea>
 
                         <div id="fieldsetBlocCopier">
 
                             <fieldset id="fieldset">
-                                <legend>Avez vous finit de copier vos données ?</legend>
+                                <legend>Est ce la dernière page à copier ?</legend>
                                 <input type="checkbox" id="oui" name="oui" value="oui">
                                 <label for="coding">Oui</label>				  
                             </fieldset>

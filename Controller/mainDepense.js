@@ -38,3 +38,38 @@ function deleteMainDepense(id){
         });
         
 }
+
+function showSalaire(){
+    
+    $('#salMoyen').css({
+        visibility : 'visible'
+    });
+
+        
+}
+
+
+function postSalaire(){
+    
+        var salMoyen =  $('#salMoyen').val();
+        salMoyen = salMoyen.replace(new RegExp(' ', 'g'), '');
+        salMoyen = salMoyen.replace(new RegExp(',', 'g'), '.');
+        salMoyen = parseFloat(salMoyen);	
+
+        $.ajax({
+          
+            url : './Model/afficherSomme.php',
+            type : 'POST', 
+            
+            data: {
+                salMoyen:salMoyen
+            },
+         
+            success: function (data) {
+
+                $('#afficherTableau').html(data);
+            }
+        });
+
+        
+}

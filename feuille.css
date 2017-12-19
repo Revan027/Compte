@@ -57,15 +57,18 @@ h3{
 	
 } 
 
+#mainDepense{
+    margin-top: 30px;   
+}
+
 #mainConteneur{
     width:100%; 
-    min-height:1400px;
     font-family:"Lucida Sans Unicode", "Lucida Grande", Sans-Serif;	
 }
 
 #centre {
     max-width:1200px;
-    min-height:  400px;  
+    min-height:350px;  
     margin-left:100px; 
     margin-bottom:50px;
     font-size:13px;  
@@ -199,7 +202,7 @@ textarea{
 
 
 td{
-   width:120px;    
+   width:140px;    
 }
 
 #afficherTableau{
@@ -346,28 +349,29 @@ legend{
 #pair{
     background-image:url(images/fondFieldset.png);
     background-repeat:repeat;
-    border:1px solid gray; 
-    font-size:15px;   
+    border:1px solid gray;   
 }
 
 #impair{
     background-color:silver; 
     background-repeat:repeat; 
     border:1px solid gray;  
-    font-size:15px;  
 }
+
+/*Dépense mensuel fixe*/
 
 #total{
     background-color:burlywood; 
     background-repeat:repeat; 
     border:1px solid gray;    
-    font-size:15px;
+
 }
 
-#somme{  
+#somme,#salMoy {  
    font-style: italic;
    margin-top:10px;
-   color:midnightblue;
+   color:midnightblue; 
+   font-size:14px;
 }
 
 /*Identification*/

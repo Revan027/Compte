@@ -1,4 +1,7 @@
-<?php include './getDB.php';
+<?php 
+        include './getDB.php';
+        include './getSomme.php';
+        
     if(isset($_POST['nameDp']) && isset($_POST['sommes'])){
             
         $pdo = connection();
@@ -10,14 +13,17 @@
             ':nameDp' => $nameDp,
             ':somme' => $sommes
         ));
+       
         
         $stmt = $pdo->prepare('SELECT id,libelle,somme FROM mainDepense ORDER BY somme DESC');
 
         $stmt->execute();
-        $arrAll = $stmt->fetchAll();
-
-        include __DIR__ .'/../templates/mainDepense.php';
+        $tabMainDepense= $stmt->fetchAll();
+        
+        include __DIR__ .'/../templates/mainDepense.php';  
+        addSomme($tabMainDepense);
         include __DIR__ .'/../templates/mainDepenseView.php';
+ 
       
 
         $stmt->closeCursor();
@@ -36,10 +42,14 @@ else if(isset($_POST['id'])){
         $stmt = $pdo->prepare('SELECT id,libelle,somme FROM mainDepense ORDER BY somme DESC');
 
         $stmt->execute();
-        $arrAll = $stmt->fetchAll();
+        $tabMainDepense = $stmt->fetchAll();
+        
+      
 
-        include __DIR__ .'/../templates/mainDepense.php';
+        include __DIR__ .'/../templates/mainDepense.php';  
+        addSomme($tabMainDepense);
         include __DIR__ .'/../templates/mainDepenseView.php';
+
          
         $stmt->closeCursor();
         $stmt = NULL;    
@@ -50,9 +60,12 @@ else if(isset($_POST['id'])){
         $stmt = $pdo->prepare('SELECT id,libelle,somme FROM mainDepense ORDER BY somme DESC');
 
         $stmt->execute();
-        $arrAll = $stmt->fetchAll();
-
-        include __DIR__ .'/../templates/mainDepense.php';
+        $tabMainDepense = $stmt->fetchAll();
+        
+       
+        
+        include __DIR__ .'/../templates/mainDepense.php';    
+        addSomme($tabMainDepense);
         include __DIR__ .'/../templates/mainDepenseView.php';
          
         $stmt->closeCursor();

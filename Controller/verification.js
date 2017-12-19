@@ -11,14 +11,14 @@ function raz() {
 }
 
 function effacer() {
-    if (document.formulaire.copier.value == "Copiez Coller vos données (si sur plusieurs page 'envoyez les données' a chaque page) du 28 au 28 de chaque mois par exemple") {	//chemin pour acceder au parametre valeur
+    if (document.formulaire.copier.value == "Copiez Coller vos données (si plusieurs pages à copier, copiez chaque page et cliquez sur 'envoyez les données') du 28 au 28 de chaque mois par exemple") {	//chemin pour acceder au parametre valeur
         document.formulaire.copier.value = "";
     }
 }
 
 function reecrire() {
     if (document.formulaire.copier.value == "") {
-        document.formulaire.copier.value = "Copiez Coller vos données (si sur plusieurs page 'envoyez les données' a chaque page) du 28 au 28 de chaque mois par exemple";
+        document.formulaire.copier.value = "Copiez Coller vos données (si plusieurs pages à copier, copiez chaque page et cliquez sur 'envoyez les données') du 28 au 28 de chaque mois par exemple";
     }
 }
 
