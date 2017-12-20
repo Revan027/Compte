@@ -80,14 +80,7 @@ h3{
     margin-bottom:50px;
    font-size:13px;  
 } 
-#barre{
-    width:1024px;
-    height:3px;
-    margin-top:20px;
-    background-color:black;
-    background-repeat:repeat;
-    border:1px solid gray;
-}
+
 /*infoBulle*/ 
 
 #infoBulleBox {
@@ -106,10 +99,10 @@ h3{
 }
 
 #barre2{
-    width:117px;
+  
     height:1px;
-    margin-left:15px;	
-    background-color:silver;
+  	
+    background-color:black;
     background-repeat:repeat;
 }
 #titreInfoBulleHaut {

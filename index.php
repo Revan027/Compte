@@ -60,7 +60,7 @@
                     </fieldset>
 
                     <fieldset id="fieldset">
-                        <legend>Cliquez sur l'icône 'plus' pour ajouter chaque rentrée d'argent</legend>
+                        <legend>Cliquez sur l'icône '+' pour ajouter chaque rentrée d'argent</legend>
                         Rentrée d'argent : <input type='text' name='rentre' maxlength="8"/><img id="imgAdd" src="./images/addition.png" onClick="ajout(event);"><input type='text' name='rentre2' disabled /><br/>
                     </fieldset>
 
@@ -71,7 +71,7 @@
                         <div id="fieldsetBlocCopier">
 
                             <fieldset id="fieldset">
-                                <legend>Est ce la dernière page à copier ?</legend>
+                                <legend>Est-ce la dernière page à copier ?</legend>
                                 <input type="checkbox" id="oui" name="oui" value="oui">
                                 <label for="coding">Oui</label>				  
                             </fieldset>

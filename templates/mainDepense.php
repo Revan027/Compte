@@ -5,7 +5,8 @@
 
                         <td id="pair">
                             <img id='croix2' onclick='deleteMainDepense("<?=  $tabMainDepense[$i]['id'] ?>");' src='./images/croix.png'/>
-                            <b> <?=  $tabMainDepense[$i]["libelle"] ?></b> <div id="somme"> <?= $tabMainDepense[$i]["somme"] ?> euros </div>
+                           
+                            <b> <?=  $tabMainDepense[$i]["libelle"] ?></b> <div id='barre2'></div>  <div id="somme"> <?= $tabMainDepense[$i]["somme"] ?> euros </div>
                         </td>
 
                         <?php  $separate =  $separate+1; $totalMainDep = $totalMainDep +$tabMainDepense[$i]["somme"];
@@ -13,7 +14,8 @@
 
                         <td id="impair"> 
                             <img id='croix2' onclick='deleteMainDepense("<?= $tabMainDepense[$i]['id']  ?>");'  src='./images/croix.png'/>
-                            <b> <?=  $tabMainDepense[$i]["libelle"] ?></b> <div id="somme"><?= $tabMainDepense[$i]["somme"] ?> euros</div>
+                            
+                            <b> <?=  $tabMainDepense[$i]["libelle"] ?></b> <div id='barre2'></div> <div id="somme"><?= $tabMainDepense[$i]["somme"] ?> euros</div>
                         </td>
                     <?php  $separate =  $separate+1; $totalMainDep = $totalMainDep +$tabMainDepense[$i]["somme"]; }
                     

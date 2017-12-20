@@ -1,4 +1,3 @@
-
 <div id='infoBulleBox'>
     
     <div id='infoBulleHaut'>
