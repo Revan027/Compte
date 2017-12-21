@@ -33,11 +33,11 @@ function bloquer(evenement) {	//on passe l'evenement qui se produit. Cela permet
 function ajoutCopierGlobal() {
     if (document.forms["formulaire"].elements["oui"].checked === true) {
         copierGlobal = copierGlobal + (document.forms["formulaire"].elements["copier"].value)+ " ";
-        alert(copierGlobal);
+        alert("Données enregistrées");
         createXHR(copierGlobal);
     } else {
         copierGlobal = copierGlobal + (document.forms["formulaire"].elements["copier"].value)+ " ";
-        alert(copierGlobal);
+         alert("Données enregistrées");
         document.forms["formulaire"].elements["copier"].value = "";
     }
 }
