@@ -1,4 +1,4 @@
-/*conteneurs*/
+/* ------- main conteneurs ------- */
 body{
     padding:0px;
     margin:0px;
@@ -9,13 +9,6 @@ body{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9',GradientType=1 ); /* IE6-9 */
 }
 
-h3{
-    margin:0;
-    color:black;	
-    text-shadow: 2px 2px 2px gray; 
-    font-size:15px; 
-
-}
 #boxH{
     width:auto; 
     height:30px;
@@ -36,30 +29,13 @@ h3{
     border-color:gray;
 }
 
- 
-#change1:hover{
-    cursor:pointer;
-    color:burlywood;
-}
-
-#change2:hover{ 
-    cursor:pointer;
-    color:darkkhaki;
-}
-
 #top {
-     position:fixed;
+    position:fixed;
     z-index:3;
-
     height:60px;
     top:0;
-    right:0;
-	
+    right:0;	
 } 
-
-#mainDepense{
-    margin-top: 30px;   
-}
 
 #mainConteneur{
     width:100%; 
@@ -78,94 +54,119 @@ h3{
     max-width:1200px;    
     margin-left:100px; 
     margin-bottom:50px;
-   font-size:13px;  
+    font-size:13px;  
 } 
 
-/*infoBulle*/ 
+h3{
+    margin:0;
+    color:black;	
+    text-shadow: 2px 2px 2px gray; 
+    font-size:15px; 
+}
+
+
+/* ------- images ------- */
+#change1:hover{
+    cursor:pointer;
+    color:burlywood;
+}
+
+#change2:hover{ 
+    cursor:pointer;
+    color:darkkhaki;
+}
+
+#croix{
+   cursor:pointer;
+   float:right;  
+}
+
+#croix:hover{
+    cursor:pointer;
+    opacity: 0.5;
+}
+
+#croix2{ 
+    cursor:pointer;
+    float:right;  
+}
+
+#croix2:hover{
+    cursor:pointer; 
+    opacity: 0.5;
+}
+
+
+/* ------- main dépense ------- */
+#mainDepense{
+    margin-top: 30px;   
+}
+
+#total{
+    background-color:burlywood; 
+    background-repeat:repeat; 
+    border:1px solid gray;    
+
+}
+
+#somme,#salMoy {  
+   font-style: italic;
+   margin-top:10px;
+   color:midnightblue; 
+   font-size:14px;
+}
+
+
+#pair{
+    background-image:url(images/fondFieldset.png);
+    background-repeat:repeat;
+    border:1px solid gray;   
+}
+
+#impair{
+    background-color:silver; 
+    background-repeat:repeat; 
+    border:1px solid gray;  
+}
+
+
+
+/* ------- infoBulle ------- */ 
+#fieldset3{ 
+    width:100px; 
+    border:0px;
+    background-image:url(images/fondFieldset.png);
+    background-repeat:repeat; 
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000; 
+}
 
 #infoBulleBox {
     position:fixed;
     z-index:3;
-    width:170px; 
     margin-top :10px;
     margin-left :1000px;
 }
 
-#infoBulleHaut {
-    width:170px;  
-    height:50px;  
-    background-image:url(images/bulleHaut.png);	
-    background-repeat:no-repeat;
+marquee{
+    width:170px; 
+    height:100px;  
+    /*overflow: scroll;	 // Ascenseur*/ 
 }
 
-#barre2{
-  
-    height:1px;
-  	
+#barre2{ 
+    height:1px;	
     background-color:black;
     background-repeat:repeat;
 }
-#titreInfoBulleHaut {
-    padding-top:15px;
-    padding-right:15px;
-    color:white; 
-    text-shadow:1px 1px 1px silver;
-}
-
-#infoBulleCentre {
-    width:150px;   
-    height:190px;  
-    /*overflow: scroll;	 // Ascenseur*/ 
-    background-image:url(images/bulleCentre.png);	
-    background-repeat:repeat-y; 
-    padding-left:15px;
-    color:silver;  
-}
-
-marquee{
-     height:190px;  
-}
-
-#infoBulleBas {
-    width:170px;   
-    height:50px;  	
-    background-image:url(images/bulleBas.png); 
-    background-repeat:no-repeat;	
-}
-/*fin infoBulle*/
 
 
-#footer{
-    position:fixed;	
-    z-index:3;
-    bottom:0;	
-    width:100%;
-    height:30px;
-    background: rgb(157,157,157); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(157,157,157,1) 0%, rgba(164,164,164,1) 12%, rgba(171,171,171,1) 25%, rgba(154,154,154,1) 39%, rgba(139,139,139,1) 50%, rgba(115,115,115,1) 51%, rgba(124,124,124,1) 60%, rgba(138,138,138,1) 76%, rgba(130,130,130,1) 91%, rgba(125,125,125,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(157,157,157,1) 0%,rgba(164,164,164,1) 12%,rgba(171,171,171,1) 25%,rgba(154,154,154,1) 39%,rgba(139,139,139,1) 50%,rgba(115,115,115,1) 51%,rgba(124,124,124,1) 60%,rgba(138,138,138,1) 76%,rgba(130,130,130,1) 91%,rgba(125,125,125,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(157,157,157,1) 0%,rgba(164,164,164,1) 12%,rgba(171,171,171,1) 25%,rgba(154,154,154,1) 39%,rgba(139,139,139,1) 50%,rgba(115,115,115,1) 51%,rgba(124,124,124,1) 60%,rgba(138,138,138,1) 76%,rgba(130,130,130,1) 91%,rgba(125,125,125,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9d9d9d', endColorstr='#7d7d7d',GradientType=0 ); /* IE6-9 */
-    text-align:center;  border:1px solid black;
-    color:white;	
-}
-.version{
-    font-size:11px;
-    margin-top:10px;
-    text-shadow: 2px 2px 2px black;
-}
-.signature{
-    float:right;
-    margin-top:10px;
-    margin-right:10px;
-    font-size:0.6em;
-    text-shadow: 2px 2px 2px black;
-}
-.titre{
-    margin-bottom:50px;
-}
 
-
+/* ------- info a enregister ------- */ 
 textarea{
     width:700px;
     height:300px;
@@ -194,6 +195,9 @@ textarea{
 }
 
 
+
+/* ------- tableau visualisation compte------- */
+
 td{
    width:140px;    
 }
@@ -208,10 +212,6 @@ td{
     text-align:center;
 }
 
-
-
-
-
 .titremois, .fondMois{
     background: rgb(139,173,211); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(139,173,211,1) 0%, rgba(164,196,222,1) 50%, rgba(153,189,221,1) 51%, rgba(200,220,236,1) 100%); /* FF3.6-15 */
@@ -224,15 +224,12 @@ td{
 .fondMois{    
     font-style: italic;
     font-weight: bold;
-   
 }
 
 .fondTAutreTitre{
     background-color:silver;
     background-repeat:repeat;
     border:1px solid gray;    
- 
-   /* width:150px;*/
 }
 
 .fondDonneeS, .fondDonneeB, .fondDonneeD, .fondDonnee, .fondDonneeA, .fondDonneeBN {
@@ -264,35 +261,14 @@ td{
     color:#02322B;
 }
 
-
-
-
-
-
 .hover:hover .fondDonnee {
     color:white;
 }
 
-#croix{
-   cursor:pointer;
-   float:right;  
-}
-
-#croix:hover{
-    cursor:pointer;
-}
-
-#croix2{ 
-    cursor:pointer;
-    float:right;  
-}
-
-#croix2:hover{
-    cursor:pointer;
-}
 
 
-/*Liste d'année*/
+
+/* ------- liste d'année ------- */ 
 
 .fondDonneeA{ 
     cursor:pointer;  
@@ -304,15 +280,20 @@ td{
     filter: alpha(opacity=50);
 }
 
-/*fieldset*/
 
-#fieldset{
+
+
+/* ------- fielset ------- */ 
+
+#fieldset{  
+    border:1px solid gray;  
     margin-top:10px;  
     background-image:url(images/fondFieldset.png);
     background-repeat:repeat;
 }
 
-#fieldset2{
+#fieldset2{ 
+    border:1px solid gray;  
     background-image:url(images/fondFieldset.png);
     background-repeat:repeat;
 }
@@ -339,35 +320,10 @@ legend{
 }
 
 
-#pair{
-    background-image:url(images/fondFieldset.png);
-    background-repeat:repeat;
-    border:1px solid gray;   
-}
 
-#impair{
-    background-color:silver; 
-    background-repeat:repeat; 
-    border:1px solid gray;  
-}
 
-/*Dépense mensuel fixe*/
 
-#total{
-    background-color:burlywood; 
-    background-repeat:repeat; 
-    border:1px solid gray;    
-
-}
-
-#somme,#salMoy {  
-   font-style: italic;
-   margin-top:10px;
-   color:midnightblue; 
-   font-size:14px;
-}
-
-/*Identification*/
+/* ------- identification ------- */ 
 
 .login{
     box-shadow:1px 1px 1px #D83F3D;background-color:#FFF3F3;
@@ -385,7 +341,38 @@ input:-webkit-autofill{
 
 
 
-/**/
+/* ------- footer ------- */ 
+#footer{
+    position:fixed;	
+    z-index:3;
+    bottom:0;	
+    width:100%;
+    height:30px;
+    background: rgb(157,157,157); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(157,157,157,1) 0%, rgba(164,164,164,1) 12%, rgba(171,171,171,1) 25%, rgba(154,154,154,1) 39%, rgba(139,139,139,1) 50%, rgba(115,115,115,1) 51%, rgba(124,124,124,1) 60%, rgba(138,138,138,1) 76%, rgba(130,130,130,1) 91%, rgba(125,125,125,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(157,157,157,1) 0%,rgba(164,164,164,1) 12%,rgba(171,171,171,1) 25%,rgba(154,154,154,1) 39%,rgba(139,139,139,1) 50%,rgba(115,115,115,1) 51%,rgba(124,124,124,1) 60%,rgba(138,138,138,1) 76%,rgba(130,130,130,1) 91%,rgba(125,125,125,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(157,157,157,1) 0%,rgba(164,164,164,1) 12%,rgba(171,171,171,1) 25%,rgba(154,154,154,1) 39%,rgba(139,139,139,1) 50%,rgba(115,115,115,1) 51%,rgba(124,124,124,1) 60%,rgba(138,138,138,1) 76%,rgba(130,130,130,1) 91%,rgba(125,125,125,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9d9d9d', endColorstr='#7d7d7d',GradientType=0 ); /* IE6-9 */
+    text-align:center;  border:1px solid black;
+    color:white;	
+}
+.version{
+    font-size:11px;
+    margin-top:10px;
+    text-shadow: 2px 2px 2px black;
+}
+.signature{
+    float:right;
+    margin-top:10px;
+    margin-right:10px;
+    font-size:0.6em;
+    text-shadow: 2px 2px 2px black;
+}
+.titre{
+    margin-bottom:50px;
+}
+
+
 #barreG{
     position:fixed;/*met une position fixe*/
     z-index:2;/*superposition. utlisable avec position seulement*/

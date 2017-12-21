@@ -1,21 +1,12 @@
 <div id='infoBulleBox'>
-    
-    <div id='infoBulleHaut'>
-
-        <div id='titreInfoBulleHaut'><center>Dépense</center> <div id='barre2'></div> </div>
-
-    </div>
-
-    <div id='infoBulleCentre'>
+    <fieldset id="fieldset3">
+        <center><b>Dépenses</b></center><div id='barre2'></div>
         <marquee scrollamount='2' direction='up'>
             <?php for ($i = 0; $i < (count($tableauDesNombres)); $i++) { ?>
                
                     - <?php echo $tableauDesNombres[$i] ?></br> 
                         
-               <?php } ?>                 
+               <?php } ?>                
        </marquee>
-    </div>  
-
-    <div id='infoBulleBas'></div>
-
+    </fieldset>
 </div>         

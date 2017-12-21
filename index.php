@@ -13,7 +13,7 @@
     
     </head>
 
-    <body onload='raz();' onbeforeunload=' window.alert("Au revoir");'> 
+    <body onload='raz();'> 
 
         <div id="top">
             <img class="titre" src="images\titre.png"/>
@@ -27,7 +27,7 @@
             
             <div id="centre"> 
                 
-                <div id="afficherTableau" ></div>
+                <div id="afficherTableau" > </div> 
             </div>        
                 <form name='formulaire'>
                  

@@ -69,10 +69,7 @@ function createXHR2(annee) {
                 document.getElementById('afficherTableau').innerHTML = xhr.responseText;
                $( "#afficherTableau" ).fadeIn();
              }, 400); 
-             
-               
-              //$( "#afficherTableau" ).slideDown("slow"); 
-              
+    
         }
     }
     xhr.open("POST", "./Model/afficheAnnee.php", true);

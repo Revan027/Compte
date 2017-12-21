@@ -70,7 +70,6 @@ function afficherTableau($annee) { //affiche le tableau de compte
             $tailleTab = 6;
             $tailleTabScinder = count($arrAll); //recuperation de la taille du tableau de la  requete pour la 2eme partie de l'affichage
         }
-
         include __DIR__ . '/../templates/tableau.php';
         
         $stmt->closeCursor();
