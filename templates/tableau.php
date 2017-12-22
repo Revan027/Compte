@@ -1,6 +1,6 @@
-<table CELLPADDING='11' cellspacing="4" id="table1">
-    <tr>
-        <td class='titremois'>Mois</td>
+<table CELLPADDING='13' cellspacing="0" id="table1"">
+    <tr class='titremois'>
+        <td class='fondMois'>Mois</td>
         <?php for ($i = 0; $i < $tailleTab; $i++) { ?>
             <td class='fondMois'>
                 <?= $arrAll[$i]["mois"] ?>
@@ -10,36 +10,34 @@
     </tr>
     
     <tr class='hover'>
-        <td class='fondTAutreTitre'>Rentrées d'argents</td>
+        <td class='fondG'>Rentrées d'argents</td>
         <?php for ($i = 0; $i < $tailleTab; $i++) { ?>
-            <td class='fondDonneeS'><?= $arrAll[$i]['salaire'] ?></td>
+            <td class='fondG'><?= $arrAll[$i]['salaire'] ?></td>
         <?php } ?>
     </tr>
     
     <tr class='hover'>
-        <td class='fondTAutreTitre'>Dépenses</td>
+        <td class='fondW'>Dépenses</td>
         <?php for ($i = 0; $i < $tailleTab; $i++) { ?>
-            <td class='fondDonneeD'><?= $arrAll[$i]['depense'] ?></td>
+            <td class='fondW'><?= $arrAll[$i]['depense'] ?></td>
         <?php } ?>
     </tr>
     
     <tr class='hover'>
-        <td class='fondTAutreTitre'>Bénéfices</td>
+        <td class='fondG'>Bénéfices</td>
         <?php for ($i = 0; $i < $tailleTab; $i++) { 
             if($arrAll[$i]['benefice']<=0){ ?> 
-                <td  class='fondDonneeBN'><?= $arrAll[$i]['benefice'] ?></td>   
+                <td  class='fondGR'><?= $arrAll[$i]['benefice'] ?></td>   
             <?php }else{ ?>    
-                <td class='fondDonneeB'><?= $arrAll[$i]['benefice'] ?></td>
+                <td class='fondG'><?= $arrAll[$i]['benefice'] ?></td>
              <?php } ?>
             <?php $benefAnnu = $benefAnnu + $arrAll[$i]['benefice']; ?>
         <?php } ?>
     </tr>
 
-
     <?php if ($scinder == true) { ?>
-    
-        <tr>
-            <td class='titremois'>Mois</td>
+        <tr class='titremois'>
+            <td class='fondMois''>Mois</td>
             <?php for ($i = 6; $i < $tailleTabScinder; $i++) { ?>
                 <td class='fondMois'>
                     <?= $arrAll[$i]["mois"] ?>
@@ -49,40 +47,40 @@
         </tr>
         
         <tr class='hover'>
-            <td class='fondTAutreTitre'>Rentrées d'argents</td>
+            <td class='fondG'>Rentrées d'argents</td>
             <?php for ($i = 6; $i < $tailleTabScinder; $i++) { ?>
-                <td class='fondDonneeS'><?= $arrAll[$i]['salaire'] ?></td>
+                <td class='fondG'><?= $arrAll[$i]['salaire'] ?></td>
             <?php } ?>
         </tr>
         
         <tr class='hover'>
-            <td class='fondTAutreTitre'>Dépenses</td>
+            <td class='fondW'>Dépenses</td>
             <?php for ($i = 6; $i < $tailleTabScinder; $i++) { ?>
-                <td class='fondDonneeD'><?= $arrAll[$i]['depense'] ?></td>
+                <td class='fondW'><?= $arrAll[$i]['depense'] ?></td>
             <?php } ?>
         </tr>
         
         <tr class='hover'>
-            <td class='fondTAutreTitre'>Bénéfices</td>
+            <td class='fondG'>Bénéfices</td>
             <?php for ($i = 6; $i < $tailleTabScinder; $i++) { 
             if($arrAll[$i]['benefice']<=0){ ?> 
-                <td class='fondDonneeBN'><?= $arrAll[$i]['benefice'] ?></td>   
+                <td class='fondGR'><?= $arrAll[$i]['benefice'] ?></td>   
             <?php }else{ ?>    
-                <td class='fondDonneeB'><?= $arrAll[$i]['benefice'] ?></td>
+                <td class='fondG'><?= $arrAll[$i]['benefice'] ?></td>
              <?php } ?>
             <?php $benefAnnu = $benefAnnu + $arrAll[$i]['benefice']; ?>
         <?php } ?>
         </tr>
             
         <tr class='hover' >
-            <td class='fondTAutreTitre'>Bénéfice Annuelle</td>
-            <td class='fondDonnee' colspan='<?= 6 ?>'><?= $benefAnnu ?></td>
+            <td class='fondGT'>Bénéfice Annuelle</td>
+            <td class='fondGT' colspan='<?= 6 ?>'><?= $benefAnnu ?></td>
         </tr>
     
     <?php }else{ ?>
         <tr class='hover' >
-            <td class='fondTAutreTitre'>Bénéfice Annuelle</td>
-            <td class='fondDonnee' colspan='<?= $tailleTab ?>'><?= $benefAnnu ?></td>
+            <td class='fondGT'>Bénéfice Annuelle</td>
+            <td class='fondGT' colspan='<?= $tailleTab ?>'><?= $benefAnnu ?></td>
         </tr>
     <?php } ?>
 </table>

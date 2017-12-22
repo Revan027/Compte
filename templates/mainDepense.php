@@ -1,4 +1,4 @@
-<table CELLPADDING='9' style="font-size:13px;">
+<table CELLPADDING='11' style="font-size:13px;">
      <tr>
          <?php $separate=0; $totalMainDep = 0; for ($i = 0; $i < count($tabMainDepense); $i++) { ?>
              <?php  if($i%2 == 0){ ?>

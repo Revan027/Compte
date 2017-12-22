@@ -2,21 +2,20 @@
 body{
     padding:0px;
     margin:0px;
-
+     background: #b0a48d; /* Old browsers */
     background: -moz-linear-gradient(left, #f2f6f8 2%, #f2f6f8 2%, #d8e1e7 50%, #f2f6f8 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left, #f2f6f8 2%,#f2f6f8 2%,#d8e1e7 50%,#f2f6f8 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #f2f6f8 2%,#f2f6f8 2%,#d8e1e7 50%,#f0f3f5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: linear-gradient(to right, #f2f6f8 2%,#f2f6f8 2%,#d8e1e7 10%,#f2f6f8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', endColorstr='#e0eff9',GradientType=1 ); /* IE6-9 */
+   
 }
 
 #boxH{
     width:auto; 
     height:30px;
-    max-width:1900px;
     padding-top:5px;
     padding-left:10px;
-    margin-top:15px;
-    margin-bottom:40px;
+    margin-bottom:10px;
     background: #a9bfc9; /* Old browsers */
     background: -moz-linear-gradient(top, #a9bfc9 0%, #95b1bd 50%, #85a2ad 51%, #537585 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #a9bfc9 0%,#95b1bd 50%,#85a2ad 51%,#537585 100%); /* Chrome10-25,Safari5.1-6 */
@@ -42,11 +41,11 @@ body{
     font-family:"Lucida Sans Unicode", "Lucida Grande", Sans-Serif;	
 }
 
-#centre {
+#centre {  
     max-width:1200px;
     min-height:350px;  
-    margin-left:100px; 
-    margin-bottom:50px;
+    margin-left:150px; 
+    margin-bottom:10px;
     font-size:13px;  
 } 
 
@@ -199,7 +198,7 @@ textarea{
 /* ------- tableau visualisation compte------- */
 
 td{
-   width:140px;    
+   width:140px; 
 }
 
 #afficherTableau{
@@ -210,71 +209,79 @@ td{
 #table1{	   	                    
     font-size:13px;
     text-align:center;
+      
 }
 
-.titremois, .fondMois{
+.titremois{
+  background: #a9bfc9; /* Old browsers */
+    background: -moz-linear-gradient(top, #a9bfc9 0%, #95b1bd 50%, #85a2ad 51%, #537585 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #a9bfc9 0%,#95b1bd 50%,#85a2ad 51%,#537585 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #a9bfc9 0%,#95b1bd 50%,#85a2ad 51%,#537585 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   
+}
+
+.fondMois{    
+    font-style: italic;
+    font-weight: bold; border-top:1px solid gray; border-bottom:1px solid gray;
+}
+
+
+.fondG,.fondGR{
+   background-repeat:repeat;
+   background-image:url(images/fondFieldset.png);
+    background-repeat:repeat;
+
+    
+}
+.fondGR{
+   color:red;
+    
+}
+.fondW{
+    background-color:#dfe7ea;
+    background-repeat:repeat;  
+    
+}
+.fondGT{
+   background: #acacac; /* Old browsers */
+   background-repeat:repeat;
+    
+}
+
+ 
+
+
+
+
+/* ------- liste d'année ------- */ 
+.titreA{
     background: rgb(139,173,211); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(139,173,211,1) 0%, rgba(164,196,222,1) 50%, rgba(153,189,221,1) 51%, rgba(200,220,236,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(139,173,211,1) 0%,rgba(164,196,222,1) 50%,rgba(153,189,221,1) 51%,rgba(200,220,236,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, rgba(139,173,211,1) 0%,rgba(164,196,222,1) 50%,rgba(153,189,221,1) 51%,rgba(200,220,236,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8badd3', endColorstr='#c8dcec',GradientType=0 ); /* IE6-9 */
     border:1px solid gray;   
+    
 }
 
-.fondMois{    
-    font-style: italic;
-    font-weight: bold;
+.fondDonneeA{ 
+    cursor:pointer;  
 }
 
-.fondTAutreTitre{
-    background-color:silver;
-    background-repeat:repeat;
-    border:1px solid gray;    
-}
-
-.fondDonneeS, .fondDonneeB, .fondDonneeD, .fondDonnee, .fondDonneeA, .fondDonneeBN {
+.fondA{
     background: rgb(227,233,237); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(227,233,237,1) 0%, rgba(219,225,229,1) 10%, rgba(206,212,218,1) 25%, rgba(206,213,220,1) 37%, rgba(208,215,222,1) 50%, rgba(191,200,209,1) 51%, rgba(217,225,229,1) 83%, rgba(229,237,239,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(227,233,237,1) 0%,rgba(219,225,229,1) 10%,rgba(206,212,218,1) 25%,rgba(206,213,220,1) 37%,rgba(208,215,222,1) 50%,rgba(191,200,209,1) 51%,rgba(217,225,229,1) 83%,rgba(229,237,239,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, rgba(227,233,237,1) 0%,rgba(219,225,229,1) 10%,rgba(206,212,218,1) 25%,rgba(206,213,220,1) 37%,rgba(208,215,222,1) 50%,rgba(191,200,209,1) 51%,rgba(217,225,229,1) 83%,rgba(229,237,239,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e9ed', endColorstr='#e5edef',GradientType=0 ); /* IE6-9 */
     font-style: italic;  
-    border:1px solid silver;  
     font-size:16px; 
     font-family:"Cursive", times, serif;
-    font-weight: bold;
+    font-weight: bold; 
+    border:1px solid gray;   
 }
 
-.fondDonneeS {
-    color:#314844;
-}
-
-.fondDonneeB {
-    color:#047263;
-}
-
-.fondDonneeBN {
-    color:red;
-}
-
-.fondDonneeD {
-    color:#02322B;
-}
-
-.hover:hover .fondDonnee {
-    color:white;
-}
-
-
-
-
-/* ------- liste d'année ------- */ 
-
-.fondDonneeA{ 
-    cursor:pointer;  
-}
-
-.fondDonneeA:hover{
+.fondA:hover{
     cursor:pointer;
     opacity: 0.5;
     filter: alpha(opacity=50);
