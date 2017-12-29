@@ -50,6 +50,8 @@ function createXHR(copierGlobal1) {
 
 function createXHR2(annee) {
 
+    clique = 1;
+    
     var xhr = null;
     if (window.XMLHttpRequest) {
         xhr = new XMLHttpRequest();
@@ -86,6 +88,7 @@ function confirmation(id, annee) {
 
 function deleteAjax(id, annee) {
 
+    clique = 1;
     var xhr = null;
     if (window.XMLHttpRequest) {
         xhr = new XMLHttpRequest();
