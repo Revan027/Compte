@@ -1,6 +1,6 @@
 
 function changeView(page){
-   
+    clique = 1;
     $( "#afficherTableau" ).fadeOut("slow"); 
     setTimeout(function(){ 
          viewMainChange(page);  

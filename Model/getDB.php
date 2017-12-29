@@ -56,25 +56,13 @@ function afficherTableau($annee) { //affiche le tableau de compte
 
     afficherAnnee();
 
-    $scinder = false;
-    $tailleTab;
-    $tailleTabScinder;
+    $taille = count($arrAll);
 
-    if (!empty($arrAll)) {
+    include __DIR__ . '/../templates/tableau.php';
 
-        if ((count($arrAll)) <= 6) { //si le nombre de mois a afficher est inférieur ou égale a 6 (6 mois)on ne scinde pas l'affichage
-            $scinder = false;
-            $tailleTab = count($arrAll);
-        } else {
-            $scinder = true;
-            $tailleTab = 6;
-            $tailleTabScinder = count($arrAll); //recuperation de la taille du tableau de la  requete pour la 2eme partie de l'affichage
-        }
-        include __DIR__ . '/../templates/tableau.php';
-        
-        $stmt->closeCursor();
-        $stmt = NULL;
-    }
+    $stmt->closeCursor();
+    $stmt = NULL;
+    
 }
 
 /**

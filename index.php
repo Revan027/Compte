@@ -5,8 +5,10 @@
     <head>
         <link rel="stylesheet"  href="./feuille.css"/>
         <link rel="icon" type="image/png" href="./images/changeView1.png" />
+        <script type="text/javascript" src="./Controller/slider.js" > </script> 
         <script src="./lib/jquery-3.2.1.js"></script>
-        <script type="text/javascript" src="./Controller/codeAjax.js" > </script> 
+        <script type="text/javascript" src="./Controller/codeAjax.js" > </script>
+        
         <script type="text/javascript" src="./Controller/changeView.js" > </script> 
         <script type="text/javascript" src="./Controller/verification.js" ></script>
         <script type="text/javascript" src="./Controller/mainDepense.js" ></script>
@@ -31,7 +33,7 @@
             </div>        
                 <form name='formulaire'>
                  
-                    <div id="boxH"> <h3> Entrez vos informations à enregister</h3></div>
+                    <div id="boxH"> <h3> Entrez vos informations à enregistrer</h3></div>
               
             <div id="centre2">            
                     <fieldset id="fieldset">
@@ -86,7 +88,7 @@
             </div>	
         </div>	
         <div id="footer">
-            <p class="signature">Développée  par Freyss M</p><p class="version">Gestion Comptes . Version 1.9</p>
+            <p class="signature">Développée  par Freyss M</p><p class="version">Gestion Comptes . Version 1.9.2</p>
         </div>	
     </body>
 </html>

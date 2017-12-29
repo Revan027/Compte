@@ -8,6 +8,7 @@ function raz() {
     rentreGlobal = 0;
     copierGlobal = "";
     document.forms["formulaire"].elements["oui"].checked = false;
+ 
 }
 
 function effacer() {
