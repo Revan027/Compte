@@ -1,5 +1,9 @@
-   
-<img onclick='slideAr(<?= $taille ?>);' src='./images/fleche.png'/>  <img id="ze" onclick='slideAv();' src='./images/fleche.png'/>
+
+ 
+   <img id="ze" onclick='slideAv();' src='./images/fleche.png'/>
+   <img onclick='slideAr(<?= $taille ?>);' src='./images/fleche2.png'/> 		  
+
+ 
 <div class="blockMois">       
     <div class='titreMois'>Mois</div>                
     <div class='conteneur1'> 
