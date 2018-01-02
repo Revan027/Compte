@@ -1,42 +1,61 @@
--- phpMyAdmin SQL Dump
--- version 4.0.10deb1
--- http://www.phpmyadmin.net
---
--- Host: localhost
--- Generation Time: Nov 05, 2017 at 12:04 AM
--- Server version: 5.5.57-0ubuntu0.14.04.1
--- PHP Version: 5.5.9-1ubuntu4.22
+CREATE TABLE `log` (
+  `id` int(11) NOT NULL,
+  `login` varchar(255) NOT NULL,
+  `mdp` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+CREATE TABLE `maindepense` (
+  `id` int(11) NOT NULL,
+  `libelle` varchar(255) NOT NULL,
+  `somme` double NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-
---
--- Database: `freyss_compte`
---
-
--- --------------------------------------------------------
-
---
--- Table structure for table `resume`
---
-
-CREATE TABLE IF NOT EXISTS `resume` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `resume` (
+  `id` int(11) NOT NULL,
   `annee` int(11) NOT NULL,
   `numMois` int(11) NOT NULL,
   `mois` varchar(100) NOT NULL,
   `salaire` double NOT NULL,
   `depense` double NOT NULL,
-  `benefice` double NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+  `benefice` double NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+CREATE TABLE `salairemoyen` (
+  `id` int(11) NOT NULL,
+  `salMoyen` double NOT NULL,
+  `total` double NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+ALTER TABLE `log`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `maindepense`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `resume`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `salairemoyen`
+  ADD PRIMARY KEY (`id`);
+
+
+ALTER TABLE `log`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `maindepense`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `resume`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `salairemoyen`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+
+
+--
+-- INSERTION DE L'ADMINISTRATEUR
+--
+
+INSERT INTO `log` (`login`, `mdp`) VALUES ('admin', '$1$BFTVEq33$j6vpAzOvj2zqEixvDRbnd0');
