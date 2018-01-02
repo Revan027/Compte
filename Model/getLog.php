@@ -1,20 +1,21 @@
 <?php
 
-    function getSession($login,$mdp){
-        include 'getDB.php';
-        
-        $pdo = connection();
-        $stmt = $pdo->prepare('SELECT mdp FROM log where login=:login');
-        $stmt->bindValue(':login', $login, PDO::PARAM_STR);
-        $stmt->execute();
-        $arrAll = $stmt->fetchAll();
-       
-        if ((password_verify($mdp,$arrAll[0]['mdp'] )) == 1) {
-            
-            session_start ();
-            $_SESSION['login'] = $login;
-            $_SESSION['mdp'] = $mdp; 
-        }
-        
-        header ('location: ../index.php');   //redirection de page
+include __DIR__ . '/getDB.php';
+
+function getSession($login, $mdp) {
+    $pdo = connection();
+    $stmt = $pdo->prepare('SELECT mdp FROM log where login=:login');
+    $stmt->bindValue(':login', $login, PDO::PARAM_STR);
+    $stmt->execute();
+    $data = $stmt->fetch();
+
+    if ((password_verify($mdp, $data['mdp'])) == 1) {
+
+        session_start();
+        $_SESSION['login'] = $login;
+        $_SESSION['mdp'] = $mdp;
     }
+
+    //redirection de page
+    header('location: ../index.php');
+}
