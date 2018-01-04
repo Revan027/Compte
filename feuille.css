@@ -43,11 +43,11 @@ body{
 
 #centre {  
     max-width:1800px;
-    min-height:450px;  
+    min-height:410px;  
     margin-left:30px; 
     margin-bottom:20px;
     font-size:13px;  
-    
+    overflow: hidden;
 } 
 
 #centre2{
@@ -66,6 +66,7 @@ h3{
 
 
 /* ------- images ------- */
+
 #change1:hover{
     cursor:pointer;
     color:burlywood;
@@ -96,7 +97,39 @@ h3{
 }
 
 
-/* ------- main dépense ------- */
+
+
+/* ------- block fleche ------- */
+#blockFleches{
+    clear:both;
+    width:800px; 
+    height:30px;
+}
+
+#fleches{
+     cursor:pointer;
+     float:left;
+}
+
+#fleches2{
+     cursor:pointer;
+     float:right;
+    
+}
+
+#fleches:hover,fleches2:hover{
+    cursor:pointer;
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+}
+
+
+
+
+
+/* ------- main depense ------- */
+
 #mainDepense{
     margin-top: 30px;   
 }
@@ -188,7 +221,6 @@ textarea{
 
 .bouton:hover{
     opacity: 0.5; 
-   
     filter:alpha(opacity=50);
     -moz-opacity:0.5;
 }
@@ -202,18 +234,34 @@ textarea{
     margin-left:30px;
 }
 
+.blockBenefA{
+    background-color:burlywood;  /* Old browsers */ 
+     padding-top:15px; 
+    width:131px; height:30px; 
+    font-size:13px;
+    text-shadow:3px 3px 8px rgba(150, 150, 150, 1);
+    float:left;
+}
+.titreBenefA{  padding-top:15px; 
+   width:120px;    float:left;height:30px;  text-shadow:3px 3px 8px rgba(150, 150, 150, 1);
+    background-color:burlywood;clear: both; overflow: hidden; font-weight: bold; 
+}
 .blockMois{  
     width:1000px; 
     height:35px;   
+    text-align:center;  font-weight: bold; 
 }
 
 .blockValeur1{
     width:1000px; 
-    height:50px; text-align:center; 
+    height:50px; 
+    text-align:center; 
+    
 }
 .blockValeur2{
     width:1000px; 
-    height:50px; text-align:center; 
+    height:50px; 
+    text-align:center; 
  
 }
 
@@ -224,7 +272,9 @@ textarea{
     padding-top:5px; 
     float:left;
     padding-left:10px;  
-    font-size:14px;  height:50px; clear: both;
+     
+    height:50px; 
+    clear: both; font-weight: bold; text-shadow:3px 3px 8px rgba(150, 150, 150, 1);
     
 }
 .titreValeur2{
@@ -233,7 +283,7 @@ textarea{
     padding-top:5px; 
     float:left;
     padding-left:10px;  
-    font-size:14px;  height:50px; clear: both;
+     height:50px; clear: both; font-weight: bold; text-shadow:3px 3px 8px rgba(150, 150, 150, 1);
     
 }
 .valeur1, .valeur1R{
@@ -250,18 +300,19 @@ textarea{
 
 .conteneur1{    
     overflow: hidden;
-    width:727px; 
-    float:left;
+    width:727px;  
+    font-size:13px;
+    text-shadow:3px 3px 8px rgba(150, 150, 150, 1);
+    float:left; border-left:1px solid gray;
 }
 
 .titreMois{
    
-    width:120px; 
+    width:130px; 
     height:30px;
     padding-top:5px; 
     float:left;
-    padding-left:10px;  
-    font-size:14px; background: #a9bfc9; /* Old browsers */
+    background: #a9bfc9; /* Old browsers */
     background: -moz-linear-gradient(top, #a9bfc9 0%, #95b1bd 50%, #85a2ad 51%, #537585 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #a9bfc9 0%,#95b1bd 50%,#85a2ad 51%,#537585 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #a9bfc9 0%,#95b1bd 50%,#85a2ad 51%,#537585 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */

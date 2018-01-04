@@ -1,11 +1,10 @@
+	  
 
- 
-   <img id="ze" onclick='slideAv();' src='./images/fleche.png'/>
-   <img onclick='slideAr(<?= $taille ?>);' src='./images/fleche2.png'/> 		  
-
- 
 <div class="blockMois">       
-    <div class='titreMois'>Mois</div>                
+    <div class='titreMois'>Mois 
+        <img id="fleches" onclick='slideAv();' src='./images/fleche.png'/>
+        <img id="fleches2" onclick='slideAr(<?= $taille ?>);' src='./images/fleche2.png'/> 
+    </div>                
     <div class='conteneur1'> 
         <div class='co'>
             <?php for ($i = 0; $i < $taille; $i++) { ?>
@@ -64,16 +63,16 @@
     }else{
         $tailleBenefB = 6*120.9;
     }
- 
+  /*<div  style=" width:<?= $tailleBenefB ?>px"> <center><?= $benefAnnu ?></center>    </div> */
  ?>
- 
+
 <div class="blockValeur1">
-        <div class='titreValeur1'>Bénéfice Annuelle </div>
-        <div class='conteneur1'>
-            <div class='co'>  
-               <div class='valeur1' style=" width:<?= $tailleBenefB ?>px"> <center><?= $benefAnnu ?></center>    </div> 
+        <div class='titreBenefA'>Bénéfice Annuelle </div>
+        <div class='blockBenefA'>
+            
+               <center><?= $benefAnnu ?></center>    
                     
-        </div>
+        
         </div> </div>
 
 
