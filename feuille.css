@@ -258,11 +258,7 @@ textarea{
     text-align:center;
     font-weight: bold; 
     float:left;
-    background: rgb(139,173,211); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(139,173,211,1) 0%, rgba(164,196,222,1) 50%, rgba(153,189,221,1) 51%, rgba(200,220,236,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(139,173,211,1) 0%,rgba(164,196,222,1) 50%,rgba(153,189,221,1) 51%,rgba(200,220,236,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(139,173,211,1) 0%,rgba(164,196,222,1) 50%,rgba(153,189,221,1) 51%,rgba(200,220,236,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8badd3', endColorstr='#c8dcec',GradientType=0 ); /* IE6-9 */
+     background-color:silver; 
 }
 
 .libelleMois{ 
@@ -274,12 +270,7 @@ textarea{
     width:120px; 
     height:30px;
     float: left;
-    background: #b1abaf; /* Old browsers */
-    background: rgb(139,173,211); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(139,173,211,1) 0%, rgba(164,196,222,1) 50%, rgba(153,189,221,1) 51%, rgba(200,220,236,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(139,173,211,1) 0%,rgba(164,196,222,1) 50%,rgba(153,189,221,1) 51%,rgba(200,220,236,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(139,173,211,1) 0%,rgba(164,196,222,1) 50%,rgba(153,189,221,1) 51%,rgba(200,220,236,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8badd3', endColorstr='#c8dcec',GradientType=0 ); /* IE6-9 */
+     background-color:silver; 
 }
 
 
