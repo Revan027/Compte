@@ -8,6 +8,6 @@
                 <?php } ?>
             </tr>
         </table>
-    </fieldset><br/>
+    </fieldset>
 
 <?php } ?>

@@ -43,7 +43,7 @@ body{
 
 #centre {  
     max-width:1800px;
-    min-height:410px;  
+    min-height:370px;  
     margin-left:30px; 
     margin-bottom:20px;
     font-size:13px;  
@@ -95,36 +95,6 @@ h3{
     cursor:pointer; 
     opacity: 0.5;
 }
-
-
-
-
-/* ------- block fleche ------- */
-#blockFleches{
-    clear:both;
-    width:800px; 
-    height:30px;
-}
-
-#fleches{
-     cursor:pointer;
-     float:left;
-}
-
-#fleches2{
-     cursor:pointer;
-     float:right;
-    
-}
-
-#fleches:hover,fleches2:hover{
-    cursor:pointer;
-    opacity: 0.5;
-    filter:alpha(opacity=50);
-    -moz-opacity:0.5;
-}
-
-
 
 
 
@@ -227,65 +197,120 @@ textarea{
 
 
 
-/* ------- tableau visualisation compte------- */
-
-
+/* ------- tableau visualisation compte et fleches------- */
 #afficherTableau{   
     margin-left:30px;
 }
 
-.blockBenefA{
-    background-color:burlywood;  /* Old browsers */ 
-     padding-top:15px; 
-    width:131px; height:30px; 
+#flecheGauche{
+     cursor:pointer;
+     float:left;
+}
+
+#flecheGauche:hover{
+    cursor:pointer;
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+}
+
+
+#flecheDroite{
+     cursor:pointer;
+     float:right;
+}
+
+#flecheDroite:hover{
+    cursor:pointer;
+    opacity: 0.5;
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+}
+
+
+
+
+
+
+/* ------- les blocks du slider ------- */
+.suppConteneur{    
+    overflow: hidden;
+    width:724px;  
     font-size:13px;
     text-shadow:3px 3px 8px rgba(150, 150, 150, 1);
-    float:left;
-}
-.titreBenefA{  padding-top:15px; 
-   width:120px;    float:left;height:30px;  text-shadow:3px 3px 8px rgba(150, 150, 150, 1);
-    background-color:burlywood;clear: both; overflow: hidden; font-weight: bold; 
-}
-.blockMois{  
-    width:1000px; 
-    height:35px;   
-    text-align:center;  font-weight: bold; 
+    float:left; 
 }
 
-.blockValeur1{
-    width:1000px; 
+.sousConteneur{
+     width:1800px;  
+}
+
+
+
+
+/* ------- fond des mois ------- */
+
+
+.titreMois{
+    width:130px; 
+    height:30px;
+    padding-top:5px;  
+    text-align:center;
+    font-weight: bold; 
+    float:left;
+    background: rgb(139,173,211); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(139,173,211,1) 0%, rgba(164,196,222,1) 50%, rgba(153,189,221,1) 51%, rgba(200,220,236,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(139,173,211,1) 0%,rgba(164,196,222,1) 50%,rgba(153,189,221,1) 51%,rgba(200,220,236,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(139,173,211,1) 0%,rgba(164,196,222,1) 50%,rgba(153,189,221,1) 51%,rgba(200,220,236,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8badd3', endColorstr='#c8dcec',GradientType=0 ); /* IE6-9 */
+}
+
+.libelleMois{ 
+  
+    font-style: italic; 
+    padding-top:5px;
+    text-align:center;
+    font-weight: bold;  
+    width:120px; 
+    height:30px;
+    float: left;
+    background: #b1abaf; /* Old browsers */
+    background: rgb(139,173,211); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(139,173,211,1) 0%, rgba(164,196,222,1) 50%, rgba(153,189,221,1) 51%, rgba(200,220,236,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(139,173,211,1) 0%,rgba(164,196,222,1) 50%,rgba(153,189,221,1) 51%,rgba(200,220,236,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(139,173,211,1) 0%,rgba(164,196,222,1) 50%,rgba(153,189,221,1) 51%,rgba(200,220,236,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8badd3', endColorstr='#c8dcec',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+
+
+
+
+
+
+/* ------- fond des valeurs ------- */
+
+
+
+.titreValeur1,.titreValeur2{
+    width:120px; 
+    padding-top:5px; 
+    float:left;
+    padding-left:10px;   
     height:50px; 
-    text-align:center; 
+    clear: both; 
+    font-weight: bold;  
+    text-align:center;
+    text-shadow:3px 3px 8px rgba(150, 150, 150, 1);
     
 }
-.blockValeur2{
-    width:1000px; 
-    height:50px; 
-    text-align:center; 
- 
-}
-
 .titreValeur1{
     background-repeat:repeat;
     background-image:url(images/fondFieldset.png);
-    width:120px; 
-    padding-top:5px; 
-    float:left;
-    padding-left:10px;  
-     
-    height:50px; 
-    clear: both; font-weight: bold; text-shadow:3px 3px 8px rgba(150, 150, 150, 1);
-    
 }
-.titreValeur2{
-   
-    width:120px; 
-    padding-top:5px; 
-    float:left;
-    padding-left:10px;  
-     height:50px; clear: both; font-weight: bold; text-shadow:3px 3px 8px rgba(150, 150, 150, 1);
-    
-}
+
 .valeur1, .valeur1R{
     background-repeat:repeat;
     background-image:url(images/fondFieldset.png);
@@ -295,56 +320,17 @@ textarea{
     width:120px; 
     height:40px;
     float: left;
-    border-right:1px solid gray;
-}
-
-.conteneur1{    
-    overflow: hidden;
-    width:727px;  
-    font-size:13px;
-    text-shadow:3px 3px 8px rgba(150, 150, 150, 1);
-    float:left; border-left:1px solid gray;
-}
-
-.titreMois{
-   
-    width:130px; 
-    height:30px;
-    padding-top:5px; 
-    float:left;
-    background: #a9bfc9; /* Old browsers */
-    background: -moz-linear-gradient(top, #a9bfc9 0%, #95b1bd 50%, #85a2ad 51%, #537585 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #a9bfc9 0%,#95b1bd 50%,#85a2ad 51%,#537585 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #a9bfc9 0%,#95b1bd 50%,#85a2ad 51%,#537585 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
    
 }
 
-
-
-
-
-
-.co{
-     width:1800px;
-    
+.valeur1R{
+   color:red; 
 }
-.libelleMois{ 
-  
-    font-style: italic; 
-    padding-top:5px; 
-    text-align:center;
-    font-weight: bold;  
-    width:120px; 
-    height:30px;
-    float: left;
-    border-left:1px solid gray;
- background: #a9bfc9; /* Old browsers */
-    background: -moz-linear-gradient(top, #a9bfc9 0%, #95b1bd 50%, #85a2ad 51%, #537585 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #a9bfc9 0%,#95b1bd 50%,#85a2ad 51%,#537585 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #a9bfc9 0%,#95b1bd 50%,#85a2ad 51%,#537585 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
+ 
+.titreValeur2{
+    background-color:#dfe7ea;
+    background-repeat:repeat;
 }
-
 
 .valeur2{
     background-color:#dfe7ea;
@@ -353,23 +339,37 @@ textarea{
     padding-top:15px; 
     text-align:center;
     width:120px; 
-    height:50px;
+    height:40px;
     float: left;
-    border-right:1px solid gray;
 }
-.valeur1R{
-   color:red;
-    
-}
- 
 
 
-.fondBenefice{ 
- 
-   background: #acacac; /* Old browsers */clear: both;
-   background-repeat:repeat;
-    
+
+
+
+/* ------- benefice annuelle ------- */
+
+.blockBenefA{
+    background-color:burlywood;  /* Old browsers */ 
+    padding-top:15px; 
+    width:131px; height:30px; 
+    font-size:13px;
+    text-shadow:3px 3px 8px rgba(150, 150, 150, 1);
+    float:left;
 }
+
+.titreBenefA{  
+    padding-top:15px; 
+    width:120px;    
+    float:left;
+    height:30px;  
+    text-shadow:3px 3px 8px rgba(150, 150, 150, 1);
+    background-color:burlywood;
+    clear: both; 
+    overflow: hidden; 
+    font-weight: bold; 
+}
+
 
  
 
