@@ -27,8 +27,7 @@
             <div id="boxH"> <h3><a id ='change1' onclick="changeView(1);">Visualisation des dépenses/bénéfices</a> <img src='./images/doubleFleche.png'/> <a id ='change2' onclick="changeView(2);">Dépense mensuel fixe</a></h3></div>
            
             
-            <div id="centre"> 
-                
+            <div id="centre">
                 <div id="afficherTableau" > </div> 
             </div>        
                 <form name='formulaire'>

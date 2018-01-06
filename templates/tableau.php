@@ -1,4 +1,4 @@
-      
+ 
 <div class='titreMois'>Mois 
     <img id="flecheGauche" onclick='slideAv();' src='./images/fleche.png'/>
     <img id="flecheDroite" onclick='slideAr(<?= $taille ?>);' src='./images/fleche2.png'/> 

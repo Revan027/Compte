@@ -43,7 +43,7 @@ body{
 
 #centre {  
     max-width:1800px;
-    min-height:370px;  
+    min-height:320px;  
     margin-left:30px; 
     margin-bottom:20px;
     font-size:13px;  
@@ -63,6 +63,9 @@ h3{
     text-shadow: 2px 2px 2px gray; 
     font-size:15px; 
 }
+
+
+
 
 
 /* ------- images ------- */
@@ -108,7 +111,7 @@ h3{
     background-color:burlywood; 
     background-repeat:repeat; 
     border:1px solid gray;    
-
+    width:140px; 
 }
 
 #somme,#salMoy {  
@@ -123,12 +126,14 @@ h3{
     background-image:url(images/fondFieldset.png);
     background-repeat:repeat;
     border:1px solid gray;   
+    width:140px; 
 }
 
 #impair{
     background-color:silver; 
     background-repeat:repeat; 
-    border:1px solid gray;  
+    border:1px solid gray; 
+    width:140px; 
 }
 
 
@@ -141,28 +146,36 @@ h3{
     background-repeat:repeat; 
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
-    border-radius: 10px;
-    -moz-box-shadow:    inset 0 0 10px #000000;
+    border-radius: 10px; 
+    border:1px solid silver;   
+    text-shadow:3px 3px 8px rgba(150, 150, 150, 1);
+    font-style: italic; 
+    font-size: 14px; 
+   /* -moz-box-shadow:    inset 0 0 10px #000000;
     -webkit-box-shadow: inset 0 0 10px #000000;
-    box-shadow:         inset 0 0 10px #000000; 
+    box-shadow:         inset 0 0 10px #000000; //ombre intérieur*/
+   -webkit-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 29px 0px rgba(0,0,0,0.75);
+
 }
 
 #infoBulleBox {
     position:fixed;
     z-index:3;
-    margin-top :10px;
-    margin-left :1000px;
+    margin-top :20px;
+    margin-left :1110px;
 }
 
 marquee{
     width:170px; 
-    height:100px;  
+    height:200px;  
     /*overflow: scroll;	 // Ascenseur*/ 
 }
 
 #barre2{ 
     height:1px;	
-    background-color:black;
+    background-color:gray;
     background-repeat:repeat;
 }
 
@@ -235,10 +248,11 @@ textarea{
 /* ------- les blocks du slider ------- */
 .suppConteneur{    
     overflow: hidden;
-    width:724px;  
-    font-size:13px;
+    width:880px;  
+    margin-left:150px;
+    font-size:15px;
     text-shadow:3px 3px 8px rgba(150, 150, 150, 1);
-    float:left; 
+
 }
 
 .sousConteneur{
@@ -248,17 +262,19 @@ textarea{
 
 
 
+
+
 /* ------- fond des mois ------- */
 
 
 .titreMois{
-    width:130px; 
+    width:150px;
     height:30px;
     padding-top:5px;  
     text-align:center;
     font-weight: bold; 
-    float:left;
-     background-color:silver; 
+    position:absolute;
+    background-color:silver; 
 }
 
 .libelleMois{ 
@@ -267,10 +283,10 @@ textarea{
     padding-top:5px;
     text-align:center;
     font-weight: bold;  
-    width:120px; 
+    width:150px; 
     height:30px;
     float: left;
-     background-color:silver; 
+    background-color:silver; 
 }
 
 
@@ -286,9 +302,9 @@ textarea{
 
 
 .titreValeur1,.titreValeur2{
-    width:120px; 
+    width:140px; 
     padding-top:5px; 
-    float:left;
+    position:absolute;
     padding-left:10px;   
     height:50px; 
     clear: both; 
@@ -308,10 +324,10 @@ textarea{
     font-style: italic; 
     padding-top:15px; 
     text-align:center; 
-    width:120px; 
+    width:150px; 
     height:40px;
     float: left;
-   
+    color : #110975;
 }
 
 .valeur1R{
@@ -329,7 +345,7 @@ textarea{
     font-style: italic; 
     padding-top:15px; 
     text-align:center;
-    width:120px; 
+    width:150px; 
     height:40px;
     float: left;
 }
@@ -343,15 +359,16 @@ textarea{
 .blockBenefA{
     background-color:burlywood;  /* Old browsers */ 
     padding-top:15px; 
-    width:131px; height:30px; 
-    font-size:13px;
+    width:150px; 
+    height:30px; 
+    font-size:15px;
     text-shadow:3px 3px 8px rgba(150, 150, 150, 1);
     float:left;
 }
 
 .titreBenefA{  
     padding-top:15px; 
-    width:120px;    
+    width:150px;    
     float:left;
     height:30px;  
     text-shadow:3px 3px 8px rgba(150, 150, 150, 1);
@@ -372,23 +389,14 @@ textarea{
 
 #table1{	   	                    
     font-size:13px;
-    text-align:center;
-      
+    text-align:center;    
 }
 
 
-td{
-   width:140px; 
-}
 
 .titreA{
-    background: rgb(139,173,211); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(139,173,211,1) 0%, rgba(164,196,222,1) 50%, rgba(153,189,221,1) 51%, rgba(200,220,236,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(139,173,211,1) 0%,rgba(164,196,222,1) 50%,rgba(153,189,221,1) 51%,rgba(200,220,236,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(139,173,211,1) 0%,rgba(164,196,222,1) 50%,rgba(153,189,221,1) 51%,rgba(200,220,236,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8badd3', endColorstr='#c8dcec',GradientType=0 ); /* IE6-9 */
-    border:1px solid gray;   
-    
+    background-color:silver; 
+    font-weight: bold;  
 }
 
 .fondDonneeA{ 
@@ -401,11 +409,11 @@ td{
     background: -webkit-linear-gradient(top, rgba(227,233,237,1) 0%,rgba(219,225,229,1) 10%,rgba(206,212,218,1) 25%,rgba(206,213,220,1) 37%,rgba(208,215,222,1) 50%,rgba(191,200,209,1) 51%,rgba(217,225,229,1) 83%,rgba(229,237,239,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, rgba(227,233,237,1) 0%,rgba(219,225,229,1) 10%,rgba(206,212,218,1) 25%,rgba(206,213,220,1) 37%,rgba(208,215,222,1) 50%,rgba(191,200,209,1) 51%,rgba(217,225,229,1) 83%,rgba(229,237,239,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e9ed', endColorstr='#e5edef',GradientType=0 ); /* IE6-9 */
-    font-style: italic;  
-    font-size:16px; 
-    font-family:"Cursive", times, serif;
+    font-style: italic;   
     font-weight: bold; 
-    border:1px solid gray;   
+    font-size:13px;   
+    border:1px solid silver; 
+    width:70px; 
 }
 
 .fondA:hover{
