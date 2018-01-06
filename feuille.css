@@ -404,11 +404,8 @@ textarea{
 }
 
 .fondA{
-    background: rgb(227,233,237); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(227,233,237,1) 0%, rgba(219,225,229,1) 10%, rgba(206,212,218,1) 25%, rgba(206,213,220,1) 37%, rgba(208,215,222,1) 50%, rgba(191,200,209,1) 51%, rgba(217,225,229,1) 83%, rgba(229,237,239,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(227,233,237,1) 0%,rgba(219,225,229,1) 10%,rgba(206,212,218,1) 25%,rgba(206,213,220,1) 37%,rgba(208,215,222,1) 50%,rgba(191,200,209,1) 51%,rgba(217,225,229,1) 83%,rgba(229,237,239,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(227,233,237,1) 0%,rgba(219,225,229,1) 10%,rgba(206,212,218,1) 25%,rgba(206,213,220,1) 37%,rgba(208,215,222,1) 50%,rgba(191,200,209,1) 51%,rgba(217,225,229,1) 83%,rgba(229,237,239,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e9ed', endColorstr='#e5edef',GradientType=0 ); /* IE6-9 */
+     background-repeat:repeat;
+    background-image:url(images/fondFieldset.png);
     font-style: italic;   
     font-weight: bold; 
     font-size:13px;   
